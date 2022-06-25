@@ -1,0 +1,187 @@
+@import url("../font/stylesheet.css");
+@import url("../font/opensans/stylesheet.css");
+@import url("../fonts/inter/stylesheet.css");
+@import url("../libs/bootstrap/bootstrap-grid.min.css");
+@import url("../libs/owl/owl.carousel.min.css");
+@import url("../libs/owl/owl.theme.default.min.css");
+@import url("../libs/fa/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed";
+  background: #000;
+}
+
+.header {
+  background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
+}
+.header_dark {
+  background-color: rgba(0, 0, 0, 0.475);
+  padding-bottom: 110px;
+}
+.header__contacts {
+  text-align: end;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #ffffff;
+  padding-top: 15px;
+}
+.header__contacts_item {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header__info {
+  margin-top: 120px;
+  text-align: center;
+}
+.header__info-title {
+  color: #fff;
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 76px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 85px;
+  text-transform: capitalize;
+  line-height: 2.2em;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.header__info-btn {
+  margin-top: 20px;
+  background: #962715;
+  width: 460px;
+  height: 70px;
+  display: inline-block;
+  font-family: Roboto, Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4em;
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.header__info-btn:hover {
+  color: #962715;
+  background: white;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+.header__info-subtitle {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1em;
+}
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0px;
+  text-transform: uppercase;
+}
+.header-nav__img {
+  width: 44px;
+  height: 43px;
+}
+.header-nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.header-nav__menu-item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.footer {
+  padding-top: 10px;
+  background: #010000;
+}
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+}
+.footer__info_img {
+  margin-right: 12px;
+}
+.footer__info_text {
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 12px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.footer__info_text-item {
+  font-size: 15px;
+  color: #FFF;
+  line-height: 2;
+}
+
+.contacts {
+  background: #000;
+}
+.contacts__text {
+  font-size: 80px;
+  font-weight: 600;
+  color: #FFF;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contacts__info_map {
+  width: 100%;
+}
+.contacts__info_contacts {
+  color: #FFF;
+  font-family: Roboto, Sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 3.5;
+}
+/*# sourceMappingURL=style.css.map */

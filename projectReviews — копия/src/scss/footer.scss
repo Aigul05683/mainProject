@@ -1,0 +1,21 @@
+.footer{
+    padding-top: 107px;
+    background:#010000 ;
+    &__info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &_map{
+
+        }
+        &_contacts{
+            color: #FFF;
+            font-family: Roboto,Sans-serif;
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 3.5;
+            
+
+        }
+    }
+}

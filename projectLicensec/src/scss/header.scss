@@ -1,0 +1,199 @@
+.header {
+    &_dark {
+        background-color: rgba(0, 0, 0, 0.408);
+        max-width: 100%;
+        max-height: 610px;
+        position: relative;
+        &_bg {
+            max-width: 100%;
+            max-height: 610px;
+            overflow: hidden;
+            position: relative;
+        }
+    } 
+    &__contacts{
+        position: relative;
+        text-align: end;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        color: #ffffff;
+        padding-top: 15px;
+        top: -606px;
+        &_item{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+    }
+    &__info {
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 42px;
+        font-style: normal;
+        line-height: 70px;
+        &-title {
+            color: #fff;
+            font-family: "Roboto Condensed", Sans-serif;
+            font-size: 85px;
+            font-weight: 600;
+            letter-spacing: 10px;
+            padding-top: 175px;
+            position: relative;
+            top: -606px;
+        }
+        &-subtitle {
+            margin-top: 55px;
+            color: #fff;
+            font-size: 35px;
+            position: relative;
+            top: -620px;
+            font-family: "Open Sans";
+            font-weight: 400;
+        }
+        &-btn {
+            margin-top: 20px;
+            background: #962715;
+            width: 480px;
+            height: 70px;
+            display: inline-block;
+            font-family: Roboto, Sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.4em;
+            border-radius: 10px 10px 10px 10px;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            position: relative;
+            top: -620px;
+        }
+
+        &-btn:hover {
+            color: #962715;
+            background: white;
+            transition: all 0.4s ease;
+            transition-duration: 0.3s;
+            transition-property: transform;
+        }
+    }
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+       
+        text-transform: uppercase;
+        position: relative;
+        top: -620px;
+        &__img {
+            width: 44px;
+            height: 43px;
+        }
+        
+        &__menu {
+            display: flex;
+            align-items: center;
+            letter-spacing: 1px;
+            font-family: "Open Sans",sans-serif;
+            flex-wrap: wrap;
+            &-item {
+                font-family: "Open Sans", sans-serif;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 20px;
+                margin-left: 20px;
+                color: #ffffff;
+                text-decoration: none;
+
+                
+            }
+        }
+    }
+}
+.elementor-background-video-embed {
+    position: relative;
+    z-index: -1;
+    top: -150px;
+}
+
+
+
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px 10px;
+    
+  }
+  
+  
+  .grid-item{
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .grid-iteml{
+    overflow: hidden;
+        width: 100%;
+        grid-column: span 2;
+        grid-row: span 2;
+        position: relative;
+        
+        height: 100%;
+  }
+  
+  
+  .grid-item__inner{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    height: 100%;
+  }
+  
+  .grid-item__inner:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(205, 205, 15, 0.437);
+    opacity: 0;
+    z-index: 2;
+    transition: all .4s ease;
+  }
+  .grid-item__inner:hover:before{
+    opacity: 1;
+     
+  }
+  
+  .grid-item__inner:hover .grid-item__img{
+    transform: scale(1.3);
+    object-fit: cover;
+  }
+  .grid-item__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s ease;
+  }
+  
+  .grid-item__tittle{
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    font-size: 24px;
+    color: white;
+    z-index: 3;
+  }
+  
+  .grid-item__tittle > span{
+    display: block;
+    transform: translateY(30px) ;
+    transition: transform .4s ease;
+  }
+  .grid-item__inner:hover .grid-item__tittle > span{
+    transform: translateY(-5px);
+  }

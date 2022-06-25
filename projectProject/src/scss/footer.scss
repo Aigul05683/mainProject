@@ -1,0 +1,27 @@
+.footer{
+    
+    padding-top: 10px;
+    background:#010000 ;
+    
+    &__info{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        &_img{
+            margin-right: 12px;
+            width: 100%;
+        }
+        &_text{
+            margin-top: 30px;
+            text-align: center;
+            margin-left: 12px;
+            font-size: 15px;
+            font-weight: 900;
+            &-item{
+                font-size: 15px;
+            color: #FFF;
+            line-height: 2;
+            }
+        }
+    }
+}

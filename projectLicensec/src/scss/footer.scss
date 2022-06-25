@@ -1,0 +1,28 @@
+.footer{
+    &__cont{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    margin-top: 70px;
+    padding-top: 107px;
+    background:#010000;
+    
+    min-height: calc(100vh - 58vh);
+  
+  
+    &__img{ 
+        &-logo{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    &__text{
+        &-item{
+            font-size: 15px;
+            color: #FFF;
+            line-height: 3;
+            font-weight: 900;
+            font-family: Roboto,Sans-serif;
+        }
+    }
+}

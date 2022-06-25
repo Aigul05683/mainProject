@@ -1,0 +1,98 @@
+.header {
+    background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
+    &_dark {
+        background-color: rgba(0, 0, 0, 0.475);
+        padding-bottom: 110px;
+    }
+    &__contacts{
+        text-align: end;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        color: #ffffff;
+        padding-top: 15px;
+        &_item{
+            text-decoration: none;
+            color: #ffffff;
+        }
+    } 
+    &__info {
+        margin-top: 120px;
+        text-align: center;
+        &-title {
+            color: #fff;
+            font-family: "Roboto Condensed", Sans-serif;
+            font-size: 76px;
+            font-weight: 600;
+            color: #fff;
+            font-family: "Roboto Condensed", Sans-serif;
+            font-size: 85px;
+            text-transform: capitalize;
+            line-height: 2.2em;
+           
+            text-shadow: 0 0 10px rgb(0 0 0 / 30%);
+        }
+        &-btn {
+            margin-top: 20px;
+            background: #962715;
+            width: 460px;
+            height: 70px;
+            display: inline-block;
+            font-family: Roboto, Sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.4em;
+            border-radius: 10px 10px 10px 10px;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+        &-btn:hover{
+            color: #962715;
+            background: white;
+            transition: all 0.4s ease;
+            transition-duration: .3s; 
+             transition-property: transform;
+            
+}
+        &-subtitle {
+            color: white;
+            font-family: "Open Sans";
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 1em;
+        }
+    }
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0px ;
+        
+        text-transform: uppercase;
+        &__img{
+            width: 44px;
+            height: 43px;
+        }
+        
+        &__menu {
+            display: flex;
+            align-items: center;
+            letter-spacing: 1px;
+            font-family: "Open Sans",sans-serif;
+            flex-wrap: wrap;
+            &-item {
+                font-family: "Open Sans",sans-serif;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 20px;
+                
+                color: #ffffff;
+                text-decoration: none;
+                
+                margin-left: 20px;
+
+            }
+        }
+    }
+}

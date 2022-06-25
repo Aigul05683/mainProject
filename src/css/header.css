@@ -1,0 +1,67 @@
+.header {
+  background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
+}
+.header .burger {
+  display: none;
+}
+.header__info {
+  padding: 14px 0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  color: white;
+}
+.header__orderBtn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+.header__orderBtn:hover {
+  color: #ffffff;
+}
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+.header-nav__img {
+  width: 50px;
+  background: black;
+}
+.header-nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-nav__menu-item {
+  margin-right: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 133% */
+  color: #fdfcff;
+  text-decoration: none;
+}
+.header-nav__menu-item:hover {
+  color: #35b8be;
+}

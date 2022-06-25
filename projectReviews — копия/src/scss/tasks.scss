@@ -1,0 +1,48 @@
+.tasks{
+    &__img{
+        width: 341px;
+        height: 230px;
+    }
+    &__title{ 
+        text-align: center;
+        color: #1E1E20;
+        font-size: 58px;
+        font-weight: 600;
+        line-height: 1.7em;
+        letter-spacing: 0;
+        padding-bottom: 90px;
+        padding-top: 50px;
+        
+    }
+    &__container{
+        display: flex;
+        &_work{
+            &-subtitle{
+            
+            }
+            &-img{
+                width: 100%;
+            }
+        }
+        
+    }
+    &__subtitle{
+        text-align: center;
+        color: #000;
+        font-family: Roboto,Sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.8;
+        margin-right: 70px;
+    }
+    &__text{
+        font-weight: 600;
+        color: #1E1E20;
+        font-size:30px ;
+        text-align: center;
+        padding-bottom: 190px;
+    }
+    .line{
+        margin-top: 50px;
+    }
+}

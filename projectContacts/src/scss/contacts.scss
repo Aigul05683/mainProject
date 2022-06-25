@@ -1,0 +1,30 @@
+.contacts{
+    background: #000;
+    
+    &__text{
+        font-size: 80px;
+        font-weight: 600;
+        color: #FFF;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &_map{
+            width: 100%;
+        }
+        &_contacts{
+            color: #FFF;
+            font-family: Roboto,Sans-serif;
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 3.5;
+            
+
+        }
+    }
+    
+}
