@@ -73,26 +73,19 @@
             width: 44px;
             height: 43px;
         }
-        &-lupa{
-            color: white;
-            margin-left: 15px;
+        &__logo{
+            text-decoration: none;
+            color: #ffffff;
+            position: relative;
         }
-        &-tg{
-            
-            &-1{
-                color: #fff; 
-                
-            }
-            background: #0088CC;
-            border-radius: 95px;
-            text-align: center;
-            font-size: 15px;
-            width: 45px;
-            height: 45px;
-            padding-top: 11px;
-            margin-left: 16px;
-            
-            
+        &__text{
+            text-decoration: none;
+            font-size: 30px;
+            color: #ffffff;
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            font-weight: 600;
         }
         &__menu {
             display: flex;
@@ -116,3 +109,51 @@
     }
 }
  
+ul{
+    list-style: none;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    text-align: left;
+}
+ul li ul{
+    background-color: #961515a8;
+    margin-left: 20px;
+    position: absolute;
+    width: 400px;
+    height: max-content;
+    
+}
+
+ul li a:hover{
+    background-color: #0819536c;
+}
+ul li ul li{
+    display: none;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #ffffff;
+    transition: all .4s ease;
+    transform: translateY(-10px);
+}
+ul li:hover ul li{
+    display: block;
+    
+    transform: translateY(0px);
+    
+}
+
