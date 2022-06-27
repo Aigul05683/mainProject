@@ -1,10 +1,32 @@
+.cont1{
+    background-color: rgba(0, 0, 0, 0.475);
+    position: relative;
+}
+.cont{
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background: url('/mainProject/src/img/bgMainDark.jpg');
+    z-index: 2;
+    
+}
 .header {
-    background: url('http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg');
+    background: url('/mainProject/src/img/bgMainDark.jpg');
+    
     &_dark{
-        background-color: rgba(0, 0, 0, 0.475);
+        
         padding-bottom: 110px;
+        
+    }
+    #navigation{
+        position: fixed;
+        z-index: 2;
+        width: 1350px;
+        
+        
     }
     &__contacts{
+        
         text-align: end;
         font-family: "Open Sans",sans-serif;
         font-weight: 500;
@@ -18,7 +40,7 @@
         
     }
     &__info {
-        margin-top: 3px;
+        padding-top: 60px;
         text-align: center;
         &-title{
             color: #FFF;
@@ -105,6 +127,11 @@
                 margin-left: 20px;
 
             }
+            &-item:hover {
+                text-decoration-line: underline;
+                
+
+            }
         }
     }
 }
@@ -139,7 +166,7 @@ ul li ul{
 }
 
 ul li a:hover{
-    background-color: #0819536c;
+    text-decoration-line: underline;
 }
 ul li ul li{
     display: none;
@@ -157,3 +184,6 @@ ul li:hover ul li{
     
 }
 
+#down{
+    padding-bottom: 2px;
+}

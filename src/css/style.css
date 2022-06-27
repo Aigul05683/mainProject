@@ -15,12 +15,29 @@ body {
   font-family: "Roboto Condensed";
 }
 
+.cont1 {
+  background-color: rgba(0, 0, 0, 0.475);
+  position: relative;
+}
+
+.cont {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  background: url("/mainProject/src/img/bgMainDark.jpg");
+  z-index: 2;
+}
+
 .header {
-  background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
+  background: url("/mainProject/src/img/bgMainDark.jpg");
 }
 .header_dark {
-  background-color: rgba(0, 0, 0, 0.475);
   padding-bottom: 110px;
+}
+.header #navigation {
+  position: fixed;
+  z-index: 2;
+  width: 1350px;
 }
 .header__contacts {
   text-align: end;
@@ -35,7 +52,7 @@ body {
   color: #ffffff;
 }
 .header__info {
-  margin-top: 3px;
+  padding-top: 60px;
   text-align: center;
 }
 .header__info-title {
@@ -135,6 +152,10 @@ body {
   text-decoration: none;
   margin-left: 20px;
 }
+.header-nav__menu-item:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
 
 ul {
   list-style: none;
@@ -171,7 +192,8 @@ ul li ul {
 }
 
 ul li a:hover {
-  background-color: rgba(8, 25, 83, 0.4235294118);
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 ul li ul li {
@@ -190,6 +212,10 @@ ul li:hover ul li {
   display: block;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+#down {
+  padding-bottom: 2px;
 }
 
 .home {
@@ -258,6 +284,69 @@ ul li:hover ul li {
   text-decoration: none;
   padding-bottom: 15px;
   color: #1E1E20;
+}
+
+.gallery-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-item {
+  margin: 15px 0;
+  padding: 0 15px;
+  width: 33%;
+}
+
+.grid-item__inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.grid-item__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-item__inner:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  background: rgba(35, 58, 77, 0.7333333333);
+  content: "";
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.grid-item__inner:hover:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  background: rgba(35, 58, 77, 0.7333333333);
+  content: "";
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.grid-item__tittle {
+  position: absolute;
+  width: 100%;
+  top: 140px;
+  color: #fff;
+  text-align: center;
 }
 
 .map {
