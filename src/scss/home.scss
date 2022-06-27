@@ -114,5 +114,29 @@
   top: 140px;
   color: #fff;
   text-align: center;
+
 }
 
+.grid-item__hidden{
+  height: 0;
+  visibility: hidden;
+  margin-bottom: 0;
+  transform-origin: top;
+  transform: scaleY(0);
+  overflow-y: hidden;
+  // transition: 0.4s all;
+  // animation: slideUp 1s forwards;
+  // transform: translate(-50%, -50%);
+  transition: all .4s ease;  
+  ::before{
+      transition: all .4s ease; 
+      
+  }
+  ::after{
+      transition: all .4s ease;  
+      transform: scaleY(1);
+  }
+}
+// .less{
+//   display: none;
+// }

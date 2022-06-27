@@ -46,9 +46,11 @@ $(document).ready(function () {
 });
 
 
-const moreBtn = document.querySelector('.faq__moreBtn')
-const hidden = document.getElementById('faq-hidden')
-function checkBtnClass() {
+
+
+const moreBtn = document.querySelector('.grid-itemMore')
+const hidden = document.querySelector('#grid-item-hidden')
+function checkBtnClass(){
     if(moreBtn.className.includes('less')){
         moreBtn.textContent = 'less...'
     } else {
@@ -57,7 +59,7 @@ function checkBtnClass() {
 }
 moreBtn.addEventListener('click', function(e) {
     e.preventDefault()
-    hidden.classList.toggle('faq__text_hidden')
+    hidden.classList.toggle('grid-item__hidden')
     moreBtn.classList.toggle('less')
     checkBtnClass()
 })

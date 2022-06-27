@@ -349,6 +349,29 @@ ul li:hover ul li {
   text-align: center;
 }
 
+.grid-item__hidden {
+  height: 0;
+  visibility: hidden;
+  margin-bottom: 0;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  overflow-y: hidden;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.grid-item__hidden ::before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.grid-item__hidden ::after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
 .map {
   margin-top: 65px;
 }
