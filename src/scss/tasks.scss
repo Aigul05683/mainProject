@@ -1,5 +1,5 @@
 .tasks{
-    
+    padding-bottom: 50px;
     &__title{
         text-align: center;
         color: #1E1E20;
@@ -11,7 +11,7 @@
         padding-top: 60px;
     }
     &__text{
-        font-weight: 600;
+        font-weight: 600; 
         color: #1E1E20;
         font-size:30px ;
         text-align: center;
@@ -58,7 +58,38 @@
       
 
 }
-#owlimg{
-  display: block;
-  max-width: 150px;
+
+.slider{
+  height: 150px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.slide-track{
+  display: flex;
+  width: calc(150px *13);
+  animation: scroll 15s linear infinite;
+}
+.slide-track:hover{
+ animation-play-state: paused;
+}
+.slide{
+  max-height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-130px*18));
+  }
 }

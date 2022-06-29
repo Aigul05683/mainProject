@@ -48,18 +48,20 @@ $(document).ready(function () {
 
 
 
-const moreBtn = document.querySelector('.grid-itemMore')
+const arrow = document.querySelector('.arrow')
 const hidden = document.querySelector('#grid-item-hidden')
 function checkBtnClass(){
-    if(moreBtn.className.includes('less')){
-        moreBtn.textContent = 'less...'
+    if(arrow.className.includes('rotate')){
+        arrow.textContent = 'less...'
     } else {
-        moreBtn.textContent = 'see more...'
+        arrow.textContent = 'see more...'
     }
 }
-moreBtn.addEventListener('click', function(e) {
+arrow.addEventListener('click', function(e) {
     e.preventDefault()
     hidden.classList.toggle('grid-item__hidden')
-    moreBtn.classList.toggle('less')
+    arrow.classList.toggle('rotate')
     checkBtnClass()
 })
+
+
