@@ -1,0 +1,26 @@
+.home {
+  padding: 40px;
+}
+.home__text {
+  text-align: center;
+  color: #1E1E20;
+  padding-bottom: 30px;
+  color: #1E1E20;
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 1.1em;
+}
+.home__cont_img {
+  width: 34%;
+  float: left;
+  padding: 15px;
+}
+.home__cont_text {
+  line-height: 1.3em;
+}
+
+.bold {
+  font-weight: 600;
+  margin-left: 15px;
+}
