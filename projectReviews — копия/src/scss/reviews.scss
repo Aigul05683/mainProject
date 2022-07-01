@@ -1,57 +1,30 @@
-.reviews {
-    padding-top: 20px;
-    &__container{
-      display: flex;
-      
-      &_left{
-
-      }
-      &_right{
-
-      }
-    }
-    &__img {
-      width: 550px;
-      height: 309px;
-      &_text{
-        font-weight: 600;
-        padding-top: 25px;
-        padding-bottom: 45px;
-        text-align: center;
-      }
-    }
-    &__text{
-        text-align: center;
-        color: #1E1E20;
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 1.7em;
-        letter-spacing: 0;
-        padding-bottom: 30px;
-    }
-    & .reviews-slide {
-      max-width: 380px;
-      max-height: 540px;
-      margin: 0px auto;
-      transition-duration: 300ms;
-      overflow: hidden;
-      margin-bottom: 50px;
-      &__img {
-          object-fit: cover;
-          margin-bottom: 13px;
-          overflow: hidden;
-          max-height: 540px;
-          border: 3px solid black;
-          min-height: 540px;
-          max-height: 540px;
-          
-          &:hover {
-              padding: 9px;
-              background-color: rgb(16, 118, 208);
-              border: none;
-          }
-      }
+.home {
+  padding: 40px;
+  &__text{
+      text-align: center;
+      color: #1E1E20;
+      padding-bottom: 30px;
+      color: #1E1E20;
+      font-family: "Roboto Condensed",Sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.1em;
+  
   }
+  &__cont{
     
+    
+    &_img{
+      width: 40%;
+      float: left;
+      padding: 15px;
+    }
+    &_text{
+      line-height: 1.3em;
+    }
+  }
 }
-
+.bold{
+font-weight: 600;
+margin-left: 15px;
+}
