@@ -1,0 +1,20 @@
+@import url('../font/stylesheet.css');
+@import url('../font/opensans/stylesheet.css');
+@import url('../libs/bootstrap/bootstrap-grid.min.css');
+@import url('../libs/owl/owl.carousel.min.css');
+@import url('../libs/owl/owl.theme.default.min.css');
+@import url('../libs/fa/all.min.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    font-family: 'Roboto Condensed';
+}
+@import './header.scss';
+@import './home.scss';
+@import './footer.scss';
+@import './media.scss';
