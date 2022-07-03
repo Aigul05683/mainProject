@@ -241,10 +241,6 @@ span {
   margin-left: 25px;
 }
 
-.map {
-  margin-top: 65px;
-}
-
 .footer {
   position: relative;
   padding-top: 10px;
@@ -474,110 +470,5 @@ span {
   place-items: center;
   overflow: hidden;
   padding-bottom: 20px;
-}
-
-.consultation {
-  margin-top: 60px;
-  text-align: center;
-  color: #FFF;
-  font-size: 58px;
-  font-weight: 600;
-  line-height: 1.7em;
-  letter-spacing: 0;
-  padding-bottom: 90px;
-  padding-top: 30px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
-}
-.consultation__title {
-  padding-top: 40px;
-  padding-bottom: 100px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.consultation__btn {
-  font-family: Roboto, Sans-serif;
-  font-size: 50px;
-  font-weight: 500;
-  line-height: 1.4em;
-  border-radius: 10px 10px 10px 10px;
-  background-color: #962715;
-  border: none;
-}
-.consultation__btn-text {
-  font-size: 45px;
-  text-decoration: none;
-  color: #FFF;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.consultation__btn:hover {
-  color: #962715;
-  background: #FFF;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.consultation__btn-text:hover {
-  font-size: 47px;
-  text-decoration: none;
-  color: rgb(181, 14, 14);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.advantage {
-  margin-top: 65px;
-  background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
-  padding-bottom: 200px;
-}
-.advantage__title {
-  text-align: center;
-  color: #ffffff;
-  font-size: 58px;
-  font-weight: 600;
-  line-height: 1.7em;
-  letter-spacing: 0;
-  padding-bottom: 40px;
-  padding-top: 50px;
-}
-.advantage__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.advantage__icons_item {
-  margin-top: 20px;
-  padding-top: 35px;
-  padding-bottom: 100px;
-  border: 3px solid rgb(255, 255, 255);
-  width: 166px;
-  height: 166px;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 80px;
-  text-align: center;
-}
-.advantage__icons_item__text {
-  font-weight: 600;
-  color: fff;
-  font-size: 30px;
-  margin-top: 52px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Open Sans";
 }
 /*# sourceMappingURL=style.css.map */

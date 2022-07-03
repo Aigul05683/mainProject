@@ -24,19 +24,19 @@ body {
   height: 100px;
   position: fixed;
   width: 100%;
-  background: url("/mainProject/src/img/bgMainDark.jpg");
-  z-index: 3;
+  background: url("/mainProject/src/img/bgMainDark.webp");
+  z-index: 2;
 }
 
 .header {
-  background: url("/mainProject/src/img/bgMainDark.jpg");
+  background: url("/mainProject/src/img/bgMainDark.webp");
 }
 .header_dark {
   padding-bottom: 110px;
 }
 .header #navigation {
   position: fixed;
-  z-index: 4;
+  z-index: 2;
   width: 1350px;
 }
 .header__contacts {
@@ -73,7 +73,7 @@ body {
 }
 .header__info-btn {
   margin-top: 20px;
-  background: #962715;
+  background-color: #962715;
   width: 480px;
   height: 70px;
   display: block;
@@ -87,18 +87,14 @@ body {
   padding: 10px;
   text-align: center;
   margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .header__info-btn:hover {
   color: #962715;
-  background: white;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  background-color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .header-nav {
   display: -webkit-box;
@@ -234,7 +230,9 @@ ul li:hover ul li {
 .home__cont_img {
   width: 40%;
   float: left;
-  padding: 15px;
+  margin: 0 15px;
+  -webkit-box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
+          box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
 }
 .home__cont_text {
   line-height: 1.4em;
@@ -355,9 +353,17 @@ ul li:hover ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 .tasks__container_work-img {
-  width: 100%;
+  max-width: 100%;
+  -webkit-box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
+          box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
+  max-height: 450px;
+  padding: 15px;
 }
 
 .consultation1 {

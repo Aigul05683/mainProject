@@ -823,6 +823,7 @@ ul li:hover ul li {
 
 .tasks {
   padding-bottom: 50px;
+  padding-top: 30px;
 }
 .tasks__title {
   text-align: center;
@@ -833,50 +834,6 @@ ul li:hover ul li {
   letter-spacing: 0;
   padding-bottom: 20px;
   padding-top: 60px;
-}
-.tasks__text {
-  font-weight: 600;
-  color: #1E1E20;
-  font-size: 30px;
-  text-align: center;
-  padding-bottom: 190px;
-  padding-top: 30px;
-}
-.tasks__icon {
-  margin-left: 70px;
-  margin-top: 20px;
-  padding-top: 35px;
-  padding-left: 30px;
-  border: 3px solid rgb(15, 13, 13);
-  width: 166px;
-  height: 166px;
-  border-radius: 50%;
-  color: rgb(24, 20, 20);
-  font-size: 80px;
-}
-.tasks__icon_1 {
-  margin-left: 70px;
-  margin-top: 20px;
-  padding-top: 35px;
-  padding-left: 51px;
-  border: 3px solid rgb(15, 13, 13);
-  width: 166px;
-  height: 166px;
-  border-radius: 50%;
-  color: rgb(24, 20, 20);
-  font-size: 80px;
-}
-.tasks__icon_2 {
-  margin-left: 70px;
-  margin-top: 20px;
-  padding-top: 35px;
-  padding-left: 51px;
-  border: 3px solid rgb(15, 13, 13);
-  width: 166px;
-  height: 166px;
-  border-radius: 50%;
-  color: rgb(24, 20, 20);
-  font-size: 80px;
 }
 
 .slider {
@@ -990,7 +947,6 @@ ul li:hover ul li {
   font-size: 58px;
   font-weight: 600;
   line-height: 1.7em;
-  letter-spacing: 0;
   padding-bottom: 40px;
   padding-top: 50px;
 }
