@@ -73,7 +73,7 @@ body {
 }
 .header__info-btn {
   margin-top: 20px;
-  background: #962715;
+  background-color: #962715;
   width: 480px;
   height: 70px;
   display: block;
@@ -87,18 +87,14 @@ body {
   padding: 10px;
   text-align: center;
   margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .header__info-btn:hover {
   color: #962715;
-  background: white;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  background-color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .header-nav {
   display: -webkit-box;
@@ -308,6 +304,8 @@ ul li:hover ul li {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .grid-item__img {
@@ -315,6 +313,8 @@ ul li:hover ul li {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .grid-item__inner:before {
@@ -376,21 +376,23 @@ ul li:hover ul li {
   text-align: center;
   max-width: 25%;
   margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .arrow {
   max-width: 25%;
   margin: 30px;
-  -webkit-transition: all 0.4 ease;
-  transition: all 0.4 ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   cursor: pointer;
 }
 
 .rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: all 0.4 ease;
-  transition: all 0.4 ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .map__cont_main {
@@ -405,155 +407,223 @@ ul li:hover ul li {
   top: 54%;
   left: 52%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img1:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img2 {
   position: absolute;
   top: 55%;
   right: 30%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img2:hover {
   right: 29%;
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img3 {
   position: absolute;
   top: 70%;
   left: 51%;
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img3:hover {
   left: 50%;
   width: 11%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img4 {
   position: absolute;
   top: 10%;
   left: 10%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img4:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img5 {
   position: absolute;
   top: 25%;
   left: 25%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img5:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img6 {
   position: absolute;
   top: 55%;
   left: 10%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img6:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img7 {
   position: absolute;
   top: 21%;
   left: 3%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img7:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img8 {
   position: absolute;
   top: 5%;
   left: 37%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img8:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img9 {
   position: absolute;
   top: 6%;
   left: 47%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img9:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img10 {
   position: absolute;
   top: -2%;
   left: 55%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img10:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img11 {
   position: absolute;
   top: 10%;
   left: 60%;
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img11:hover {
   width: 11%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img12 {
   position: absolute;
   top: 30%;
   left: 65%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img12:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img13 {
   position: absolute;
   top: 50%;
   left: 80%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img13:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img14 {
   position: absolute;
   top: 3%;
   left: 68%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   width: 7%;
 }
 .map__cont_main-img14:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img15 {
   position: absolute;
   top: 20%;
   left: 88%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   width: 12%;
 }
 .map__cont_main-img15:hover {
   width: 14%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img16 {
   position: absolute;
   top: 40%;
   left: 88%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img16:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img17 {
   position: absolute;
   top: 55%;
   left: 38%;
   width: 7%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .map__cont_main-img17:hover {
   width: 9%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .footer {
@@ -746,6 +816,11 @@ ul li:hover ul li {
             transform: translateX(-2340px);
   }
 }
+.slide1:hover {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
 .tasks {
   padding-bottom: 50px;
 }

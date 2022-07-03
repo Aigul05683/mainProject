@@ -237,7 +237,8 @@ ul li:hover ul li {
   padding: 15px;
 }
 .home__cont_text {
-  line-height: 1.3em;
+  line-height: 1.4em;
+  font-size: 19px;
 }
 
 .bold {
@@ -385,3 +386,4 @@ ul li:hover ul li {
   padding: 5px;
   color: white;
 }
+/*# sourceMappingURL=style.css.map */

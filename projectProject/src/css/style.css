@@ -15,12 +15,29 @@ body {
   font-family: "Roboto Condensed";
 }
 
+.cont1 {
+  background-color: rgba(0, 0, 0, 0.475);
+  position: relative;
+}
+
+.cont {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  background: url("/mainProject/src/img/bgMainDark.webp");
+  z-index: 3;
+}
+
 .header {
-  background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
+  background: url("/mainProject/src/img/bgMainDark.webp");
 }
 .header_dark {
-  background-color: rgba(0, 0, 0, 0.475);
   padding-bottom: 110px;
+}
+.header #navigation {
+  position: fixed;
+  z-index: 4;
+  width: 1350px;
 }
 .header__contacts {
   text-align: end;
@@ -35,7 +52,7 @@ body {
   color: #ffffff;
 }
 .header__info {
-  margin-top: 3px;
+  padding-top: 60px;
   text-align: center;
 }
 .header__info-title {
@@ -56,7 +73,7 @@ body {
 }
 .header__info-btn {
   margin-top: 20px;
-  background: #962715;
+  background-color: #962715;
   width: 480px;
   height: 70px;
   display: block;
@@ -70,18 +87,14 @@ body {
   padding: 10px;
   text-align: center;
   margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .header__info-btn:hover {
   color: #962715;
-  background: white;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  background-color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .header-nav {
   display: -webkit-box;
@@ -99,6 +112,20 @@ body {
 .header-nav__img {
   width: 44px;
   height: 43px;
+}
+.header-nav__logo {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+}
+.header-nav__text {
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  font-weight: 600;
 }
 .header-nav__menu {
   display: -webkit-box;
@@ -120,6 +147,71 @@ body {
   color: #ffffff;
   text-decoration: none;
   margin-left: 20px;
+}
+.header-nav__menu-item:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+ul li {
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  text-align: left;
+}
+
+ul li ul {
+  background-color: rgba(150, 21, 21, 0.6588235294);
+  margin-left: 20px;
+  position: absolute;
+  width: 400px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+ul li a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+ul li ul li {
+  display: none;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+ul li:hover ul li {
+  display: block;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#down {
+  padding-bottom: 2px;
 }
 
 .home {
@@ -178,7 +270,7 @@ body {
   height: 100%;
   background: rgba(41, 95, 124, 0.5137254902);
   opacity: 0;
-  z-index: 2;
+  z-index: 1;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -209,7 +301,7 @@ body {
   bottom: 50px;
   font-size: 24px;
   color: white;
-  z-index: 3;
+  z-index: 2;
 }
 
 .grid-item__tittle > span {

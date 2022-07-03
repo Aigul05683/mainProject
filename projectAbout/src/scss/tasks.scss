@@ -1,64 +1,36 @@
-.tasks{
-    
-    &__title{
-        text-align: center;
-        color: #1E1E20;
-        font-size: 58px;
-        font-weight: 600;
-        line-height: 1.7em;
-        letter-spacing: 0;
-        padding-bottom: 20px;
-        padding-top: 60px;
-    }
-    &__text{
-        font-weight: 600;
-        color: #1E1E20;
-        font-size:30px ;
-        text-align: center;
-        padding-bottom: 190px;
-        padding-top: 30px;
-    }
-    &__icon{
-        margin-left: 70px;
-        margin-top: 20px;
-        padding-top: 35px;
-        padding-left: 30px;
-      border: 3px solid rgb(15, 13, 13);
-      width: 166px;
-      height: 166px;
-      border-radius: 50%;
-      color: rgb(24, 20, 20);
-      font-size: 80px;
-      
-      &_1{
-        margin-left: 70px;
-        margin-top: 20px;
-        padding-top: 35px;
-        padding-left: 51px;
-      border: 3px solid rgb(15, 13, 13);
-      width: 166px;
-      height: 166px;
-      border-radius: 50%;
-      color: rgb(24, 20, 20);
-      font-size: 80px;
-      }
-      &_2{
-        margin-left: 70px;
-        margin-top: 20px;
-        padding-top: 35px;
-        padding-left: 51px;
-      border: 3px solid rgb(15, 13, 13);
-      width: 166px;
-      height: 166px;
-      border-radius: 50%;
-      color: rgb(24, 20, 20);
-      font-size: 80px;
-      }
-    }
-      
-
+.slide2-track{
+  display: flex;
+  width: 100%;
+  animation: scroll 0s linear infinite;
+  margin: 0 auto;
 }
-#owlimg{
-  display: block;
-  max-width: 150px;
+.slide2-track:hover{
+ animation-play-state: paused;
+}
+.slide2{
+  max-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-10%);
+  }
+}
+.slide2:hover{
+  cursor: zoom-in;
+}
+.slider2{
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding-bottom: 20px;
 }

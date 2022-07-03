@@ -1,3 +1,7 @@
+$(document).ready(function() {    
+    $("body").css("opacity", "1");
+  });
+  
 function backToTop(){
     let button = $('.back-to-top');
     $(window).on('scroll', ()=>{

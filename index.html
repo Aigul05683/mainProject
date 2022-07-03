@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-<body>
-    <header class="header">
+<body style="opacity:0;transition:all .5s ease;">
+    <header class="header"> 
         <div class="cont"></div>
         <div class="header_dark">
             <div class="container">
@@ -28,7 +28,11 @@
                     </div>
                     <nav class="header-nav">
                         <a href="./index.html" class="header-nav__logo">
-                            <img src="./src/img/HIW/logo.png" alt="" class="header-nav__img">
+                            <picture>
+                                <source srcset="./src/img/HIW/logo.webp" type="image/webp">
+                               <img src="./src/img/HIW/logo.png" alt="" class="header-nav__img"> 
+                            </picture>
+                            
                             <div class="header-nav__text">
                                 GFP
                             </div>
@@ -225,7 +229,7 @@
                                 <div class="grid-item__inner">
                                     <picture>
                                         <source srcset="./src/img/6.webp" type="image/webp">
-                                        <img src="./src/img/6.jpg" alt="" class="grid-item__img">
+                                        <img src="./src/img/6.png" alt="" class="grid-item__img">
                                     </picture>
                                     <div class="grid-item__tittle">
                                         <span>
@@ -276,7 +280,10 @@
             <div class="container">
                 <div class="map__cont">
                     <div class="map__cont_main"> 
-                        <object data="./src/img/map/1.svg" type="" class="map__cont_main-img"></object>
+                        <picture>
+                            <source srcset="./src/img/map/map.webp" type="image/webp" >
+                            <img src="./src/img/map/map.png" alt="" class="map__cont_main-img">
+                        </picture>
                         <object data="./src/img/map/2.svg" type="" class="map__cont_main-img1"></object>
                         <object data="./src/img/map/3.svg" type="" class="map__cont_main-img2"></object>
                         <object data="./src/img/map/4.svg" type="" class="map__cont_main-img3"></object>
