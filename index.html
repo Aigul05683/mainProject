@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-<body>
-    <header class="header">
-        <div class="cont"></div>
+<body style="opacity:0; transition: all .5s ease;">
+    <header class="header"> 
+        <div class="cont">
+            
+        </div>
         <div class="header_dark">
             <div class="container">
                 <div class="navigation" id="navigation">
@@ -28,7 +30,11 @@
                     </div>
                     <nav class="header-nav">
                         <a href="./index.html" class="header-nav__logo">
-                            <img src="./src/img/HIW/logo.png" alt="" class="header-nav__img">
+                            <picture>
+                                <source srcset="./src/img/HIW/logo.webp" type="image/webp">
+                               <img src="./src/img/HIW/logo.png" alt="" class="header-nav__img"> 
+                            </picture>
+                            
                             <div class="header-nav__text">
                                 GFP
                             </div>
@@ -69,9 +75,7 @@
                                         <li><a href="">2. Производственного назначения</a></li>
                                     </ul>
                                 </li>
-
                             </ul>
-
                             <a href="./projectLicensec/index.html" class="header-nav__menu-item">нормативные
                                 документы</a>
                             <a href="./projectReviews — копия/index.html" class="header-nav__menu-item">Наука</a>
@@ -84,7 +88,7 @@
                 </div>
             </div>
             <div class="header__info">
-                <div class="header__info-title">GLOBAL FIRE PROTECTION</div>
+                <div class="header__info-title">  GLOBAL FIRE PROTECTION</div>
                 <div class="header__info-subtitle">ПОЖАРНАЯ БЕЗОПАСНОСТЬ</div>
             </div>
             <a href="" class="header__info-btn">
@@ -102,7 +106,7 @@
                 </div>
                 <div class="gallery-grid">
                     <div class="grid-item">
-                        <a href="">
+                        <a href="./projectServis/projectServis1/index.html">
                             <div class="grid-item__inner">
                                 <picture>
                                     <source srcset="./src/img/1.webp" type="image/webp">
@@ -115,7 +119,7 @@
                         </a>
                     </div>
                     <div class="grid-item">
-                        <a href="">
+                        <a href="./projectServis/projectServis2/index.html">
                             <div class="grid-item__inner">
                                 <picture>
                                     <source srcset="./src/img/2.webp" type="image/webp">
@@ -129,7 +133,7 @@
                         </a>
                     </div>
                     <div class="grid-item">
-                        <a href="">
+                        <a href="./projectServis/projectServis3/index.html">
                             <div class="grid-item__inner">
                                 <picture>
                                     <source srcset="./src/img/32.webp" type="image/webp">
@@ -143,7 +147,7 @@
                         </a>
                     </div>
                     <div class="grid-item">
-                        <a href="">
+                        <a href="./projectServis/projectServis4/index.html">
                             <div class="grid-item__inner">
                                 <picture>
                                     <source srcset="./src/img/31.webp" type="image/webp">
@@ -158,7 +162,7 @@
                         </a>
                     </div>
                     <div class="grid-item">
-                        <a href="">
+                        <a href="./projectServis/projectServis5/index.html">
                             <div class="grid-item__inner">
                                 <picture>
                                     <source srcset="./src/img/5.webp" type="image/webp">
@@ -173,7 +177,7 @@
                         </a>
                     </div>
                     <div class="grid-item">
-                        <a href="">
+                        <a href="./projectServis/projectServis6/index.html">
                             <div class="grid-item__inner">
                                 <picture>
                                     <source srcset="./src/img/9.webp" type="image/webp">
@@ -190,7 +194,7 @@
                     </div>
                     <div id="grid-item-hidden" class="gallery-grid grid-item__hidden">
                         <div class="grid-item">
-                            <a href="">
+                            <a href="./projectServis/projectServis7/index.html">
                                 <div class="grid-item__inner">
                                     <picture>
                                         <source srcset="./src/img/7.webp" type="image/webp">
@@ -206,7 +210,7 @@
                             </a>
                         </div>
                         <div class="grid-item">
-                            <a href="">
+                            <a href="./projectServis/projectServis8/index.html">
                                 <div class="grid-item__inner">
                                     <picture>
                                         <source srcset="./src/img/8.webp" type="image/webp">
@@ -221,11 +225,11 @@
                             </a>
                         </div>
                         <div class="grid-item">
-                            <a href="">
+                            <a href="./projectServis/projectServis9/index.html">
                                 <div class="grid-item__inner">
                                     <picture>
                                         <source srcset="./src/img/6.webp" type="image/webp">
-                                        <img src="./src/img/6.jpg" alt="" class="grid-item__img">
+                                        <img src="./src/img/6.png" alt="" class="grid-item__img">
                                     </picture>
                                     <div class="grid-item__tittle">
                                         <span>
@@ -276,7 +280,10 @@
             <div class="container">
                 <div class="map__cont">
                     <div class="map__cont_main"> 
-                        <object data="./src/img/map/1.svg" type="" class="map__cont_main-img"></object>
+                        <picture>
+                            <source srcset="./src/img/map/map.webp" type="image/webp" >
+                            <img src="./src/img/map/map.png" alt="" class="map__cont_main-img">
+                        </picture>
                         <object data="./src/img/map/2.svg" type="" class="map__cont_main-img1"></object>
                         <object data="./src/img/map/3.svg" type="" class="map__cont_main-img2"></object>
                         <object data="./src/img/map/4.svg" type="" class="map__cont_main-img3"></object>

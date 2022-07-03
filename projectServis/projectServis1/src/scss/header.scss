@@ -6,12 +6,12 @@
     height: 100px;
     position: fixed;
     width: 100%;
-    background: url('/mainProject/src/img/bgMainDark.jpg');
-    z-index: 3;
+    background: url('/mainProject/src/img/bgMainDark.webp');
+    z-index: 2;
     
 }
 .header {
-    background: url('/mainProject/src/img/bgMainDark.jpg');
+    background: url('/mainProject/src/img/bgMainDark.webp');
     
     &_dark{
         
@@ -20,7 +20,7 @@
     }
     #navigation{
         position: fixed;
-        z-index: 4;
+        z-index: 2;
         width: 1350px;
         
         
@@ -60,7 +60,7 @@
         }  
         &-btn {
             margin-top: 20px;
-            background: #962715;
+            background-color: #962715;
             width: 480px;
             height: 70px;
             display: block;
@@ -74,14 +74,16 @@
             padding: 10px;
            text-align: center;
             margin: 0 auto;
+            transition: all 0.5s ease;
+           
         }
 
         &-btn:hover {
             color: #962715;
-            background: white;
-            transition: all 0.4s ease;
-            transition-duration: 0.3s;
-            transition-property: transform;
+            background-color: white;
+            transition: all 0.5s ease;
+            
+            
         }
     }
     &-nav {

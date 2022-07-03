@@ -1,3 +1,6 @@
+$(document).ready(function() {    
+    $("body").css("opacity", "1");
+  });
 $(document).ready(function () {
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -46,18 +49,19 @@ $(document).ready(function () {
 });
 
 
-const moreBtn = document.querySelector('.faq__moreBtn')
-const hidden = document.getElementById('faq-hidden')
-function checkBtnClass() {
-    if(moreBtn.className.includes('less')){
-        moreBtn.textContent = 'less...'
-    } else {
-        moreBtn.textContent = 'see more...'
-    }
+function backToTop(){
+    let button = $('.back-to-top');
+    $(window).on('scroll', ()=>{
+        if($(this).scrollTop()>= 50){
+            button.fadeIn();
+        }else{
+            button.fadeOut()
+        }
+    })
+    button.on('click', (e)=>{
+        e.preventDefault();
+        $('html').animate({scrollTop: 0}, 1000);
+    })
 }
-moreBtn.addEventListener('click', function(e) {
-    e.preventDefault()
-    hidden.classList.toggle('faq__text_hidden')
-    moreBtn.classList.toggle('less')
-    checkBtnClass()
-})
+
+backToTop();

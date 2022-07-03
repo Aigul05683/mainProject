@@ -17,12 +17,18 @@
     }
     &__container{
         display: flex;
+        justify-content: space-evenly;
+        width: 100%;
         &_work{
+            
             &-subtitle{
             
             }
             &-img{
-                width: 100%;
+                max-width: 100%;
+                box-shadow: 0px 24px 24px rgba(0, 72, 109, 0.2);
+                max-height: 450px;
+                padding: 15px;
             }
         }
         

@@ -1,3 +1,6 @@
+$(document).ready(function() {    
+    $("body").css("opacity", "1");
+  });
 $(document).ready(function () {
     var owl = $('.owl-carousel');
     owl.owlCarousel({

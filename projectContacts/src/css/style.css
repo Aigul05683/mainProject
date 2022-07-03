@@ -17,12 +17,29 @@ body {
   background: #000;
 }
 
+.cont1 {
+  background-color: rgba(0, 0, 0, 0.475);
+  position: relative;
+}
+
+.cont {
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  background: url("/mainProject/src/img/bgMainDark.webp");
+  z-index: 2;
+}
+
 .header {
-  background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
+  background: url("/mainProject/src/img/bgMainDark.webp");
 }
 .header_dark {
-  background-color: rgba(0, 0, 0, 0.475);
   padding-bottom: 110px;
+}
+.header #navigation {
+  position: fixed;
+  z-index: 2;
+  width: 1350px;
 }
 .header__contacts {
   text-align: end;
@@ -37,27 +54,31 @@ body {
   color: #ffffff;
 }
 .header__info {
-  margin-top: 120px;
+  padding-top: 60px;
   text-align: center;
 }
 .header__info-title {
-  color: #fff;
+  color: #FFF;
   font-family: "Roboto Condensed", Sans-serif;
   font-size: 76px;
   font-weight: 600;
-  color: #fff;
+  padding-bottom: 12px;
+  padding-top: 50px;
+}
+.header__info-subtitle {
+  color: #BFBFBF;
   font-family: "Roboto Condensed", Sans-serif;
-  font-size: 85px;
-  text-transform: capitalize;
-  line-height: 2.2em;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1em;
+  margin-bottom: 50px;
 }
 .header__info-btn {
   margin-top: 20px;
-  background: #962715;
-  width: 460px;
+  background-color: #962715;
+  width: 480px;
   height: 70px;
-  display: inline-block;
+  display: block;
   font-family: Roboto, Sans-serif;
   font-size: 32px;
   font-weight: 600;
@@ -66,25 +87,16 @@ body {
   text-decoration: none;
   color: white;
   padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .header__info-btn:hover {
   color: #962715;
-  background: white;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-}
-.header__info-subtitle {
-  color: white;
-  font-family: "Open Sans";
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 1em;
+  background-color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .header-nav {
   display: -webkit-box;
@@ -102,6 +114,20 @@ body {
 .header-nav__img {
   width: 44px;
   height: 43px;
+}
+.header-nav__logo {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+}
+.header-nav__text {
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  font-weight: 600;
 }
 .header-nav__menu {
   display: -webkit-box;
@@ -124,24 +150,93 @@ body {
   text-decoration: none;
   margin-left: 20px;
 }
-
-.footer {
-  padding-top: 10px;
-  background: #010000;
+.header-nav__menu-item:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
-.footer__info {
+
+ul {
+  list-style: none;
+  position: relative;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.footer__info_img {
-  margin-right: 12px;
+
+ul li {
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  text-align: left;
+}
+
+ul li ul {
+  background-color: rgba(150, 21, 21, 0.6588235294);
+  margin-left: 20px;
+  position: absolute;
+  width: 400px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+ul li a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+ul li ul li {
+  display: none;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+ul li:hover ul li {
+  display: block;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#down {
+  padding-bottom: 2px;
+}
+
+.footer {
+  position: relative;
+  margin-top: 50px;
+  padding-top: 10px;
+  background: #244f67;
+}
+.footer__copyright {
+  position: absolute;
+  background: #1b3c4d;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  line-height: 2;
+  padding-top: 10px;
 }
 .footer__info_text {
+  margin: 15px 0;
+  padding: 0 15px;
+  width: 33%;
   margin-top: 30px;
   text-align: center;
   margin-left: 12px;
@@ -150,8 +245,67 @@ body {
 }
 .footer__info_text-item {
   font-size: 15px;
-  color: #FFF;
+  color: #fff;
   line-height: 2;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.footer__inner-item {
+  margin: 20px;
+}
+.footer__inner-item_img-img {
+  max-width: 300px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 200px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  background-color: rgba(36, 80, 103, 0.4509803922);
+  display: none;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+  outline: none;
+}
+
+.back-to-top::before,
+.back-to-top::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.back-to-top::before {
+  width: 5px;
+  height: 25px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #fff;
+}
+
+.back-to-top::after {
+  width: 15px;
+  height: 15px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 5px solid #fff;
+  border-left: 5px solid #fff;
 }
 
 .contacts {

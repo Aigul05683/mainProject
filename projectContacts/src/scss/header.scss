@@ -1,10 +1,32 @@
+.cont1{
+    background-color: rgba(0, 0, 0, 0.475);
+    position: relative;
+}
+.cont{
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background: url('/mainProject/src/img/bgMainDark.webp');
+    z-index: 2;
+    
+}
 .header {
-    background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
-    &_dark {
-        background-color: rgba(0, 0, 0, 0.475);
+    background: url('/mainProject/src/img/bgMainDark.webp');
+    
+    &_dark{
+        
         padding-bottom: 110px;
+        
+    }
+    #navigation{
+        position: fixed;
+        z-index: 2;
+        width: 1350px;
+        
+        
     }
     &__contacts{
+        
         text-align: end;
         font-family: "Open Sans",sans-serif;
         font-weight: 500;
@@ -15,29 +37,33 @@
             text-decoration: none;
             color: #ffffff;
         }
-    } 
+        
+    }
     &__info {
-        margin-top: 120px;
+        padding-top: 60px;
         text-align: center;
-        &-title {
-            color: #fff;
-            font-family: "Roboto Condensed", Sans-serif;
+        &-title{
+            color: #FFF;
+            font-family: "Roboto Condensed",Sans-serif;
             font-size: 76px;
             font-weight: 600;
-            color: #fff;
-            font-family: "Roboto Condensed", Sans-serif;
-            font-size: 85px;
-            text-transform: capitalize;
-            line-height: 2.2em;
-           
-            text-shadow: 0 0 10px rgb(0 0 0 / 30%);
+            padding-bottom: 12px;
+            padding-top: 50px;
         }
+        &-subtitle{
+            color: #BFBFBF;
+    font-family: "Roboto Condensed",Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 50px;
+        }  
         &-btn {
             margin-top: 20px;
-            background: #962715;
-            width: 460px;
+            background-color: #962715;
+            width: 480px;
             height: 70px;
-            display: inline-block;
+            display: block;
             font-family: Roboto, Sans-serif;
             font-size: 32px;
             font-weight: 600;
@@ -46,21 +72,18 @@
             text-decoration: none;
             color: white;
             padding: 10px;
+           text-align: center;
+            margin: 0 auto;
+            transition: all 0.5s ease;
+           
         }
-        &-btn:hover{
+
+        &-btn:hover {
             color: #962715;
-            background: white;
-            transition: all 0.4s ease;
-            transition-duration: .3s; 
-             transition-property: transform;
+            background-color: white;
+            transition: all 0.5s ease;
             
-}
-        &-subtitle {
-            color: white;
-            font-family: "Open Sans";
-            font-size: 35px;
-            font-weight: 600;
-            line-height: 1em;
+            
         }
     }
     &-nav {
@@ -74,7 +97,20 @@
             width: 44px;
             height: 43px;
         }
-        
+        &__logo{
+            text-decoration: none;
+            color: #ffffff;
+            position: relative;
+        }
+        &__text{
+            text-decoration: none;
+            font-size: 30px;
+            color: #ffffff;
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            font-weight: 600;
+        }
         &__menu {
             display: flex;
             align-items: center;
@@ -93,6 +129,63 @@
                 margin-left: 20px;
 
             }
+            &-item:hover {
+                text-decoration-line: underline;
+                
+
+            }
         }
     }
+}
+ 
+ul{
+    list-style: none;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    text-align: left;
+}
+ul li ul{
+    background-color: #961515a8;
+    margin-left: 20px;
+    position: absolute;
+    width: 400px;
+    height: max-content;
+    
+}
+
+ul li a:hover{
+    text-decoration-line: underline;
+}
+ul li ul li{
+    display: none;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: #ffffff;
+    transition: all .4s ease;
+    transform: translateY(-10px);
+}
+ul li:hover ul li{
+    display: block;
+    
+    transform: translateY(0px);
+    
+}
+
+#down{
+    padding-bottom: 2px;
 }

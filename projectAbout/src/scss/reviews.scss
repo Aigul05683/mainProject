@@ -1,5 +1,4 @@
 .reviews{
-   margin-top: 140px;
     background: url('http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg');
     &__title{
         text-align: center;
@@ -11,30 +10,90 @@
         
         padding-top: 50px;
     }
-    &__text{
-        font-weight: 600;
-        color: #fff;
-        font-size:30px ;
-        text-align: center;
-       
-    }
-    & .reviews-slide {
-        max-width: 380px;
-        max-height: 540px;
-        margin: 0px auto;
-        transition-duration: 300ms;
-        overflow: hidden;
-        margin-bottom: 50px;
-        &__img {
-            object-fit: cover;
-            margin-bottom: 13px;
-            overflow: hidden;
-            max-height: 540px;
-           
-            min-height: 540px;
-            max-height: 540px;
-            
-            
-        }
-    }
+    
+    
+}
+
+.slider{
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.slide-track{
+  display: flex;
+  width: calc(270px *7);
+  animation: scroll 15s linear infinite;
+}
+.slide-track:hover{
+ animation-play-state: paused;
+}
+.slide{
+  max-height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-10%);
+  }
+}
+
+.slider{
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.slide:hover{
+  cursor: zoom-in;
+}
+
+.slide2-track{
+  display: flex;
+  width: 100%;
+  animation: scroll 0s linear infinite;
+  margin: 0 auto;
+}
+.slide2-track:hover{
+ animation-play-state: paused;
+}
+.slide2{
+  max-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-10%);
+  }
+}
+.slide2:hover{
+  cursor: zoom-in;
+}
+.slider2{
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
