@@ -1,5 +1,4 @@
 .contacts{
-    background: #000;
     
     &__text{
         font-size: 80px;
@@ -27,4 +26,40 @@
         }
     }
     
+}
+
+.section-form{
+    padding-top: 122px;
+    padding-bottom: 100px;
+    color: rgb(18, 16, 16);
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    
+    &__input, &__textarea{
+        border: none;
+        border-bottom: 1px solid #e1e1e1;
+        font-size: 14px;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+        transition: all .4s ease;
+        &:focus{
+            outline: none;
+            border-bottom: 1px solid  #131313;
+        }
+    }
+}
+.btn{
+    color:#fff;
+    background-color:#962715 ;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px 0;
+    border: none;
 }

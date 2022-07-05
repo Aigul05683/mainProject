@@ -14,11 +14,9 @@
 
 body {
   font-family: "Roboto Condensed";
-  background: #000;
 }
 
 .cont1 {
-  background-color: rgba(0, 0, 0, 0.475);
   position: relative;
 }
 
@@ -308,9 +306,6 @@ ul li:hover ul li {
   border-left: 5px solid #fff;
 }
 
-.contacts {
-  background: #000;
-}
 .contacts__text {
   font-size: 80px;
   font-weight: 600;
@@ -337,5 +332,48 @@ ul li:hover ul li {
   font-size: 14px;
   font-weight: 900;
   line-height: 3.5;
+}
+
+.section-form {
+  padding-top: 122px;
+  padding-bottom: 100px;
+  color: rgb(18, 16, 16);
+  text-align: center;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form__input, .form__textarea {
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.form__input:focus, .form__textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #131313;
+}
+
+.btn {
+  color: #fff;
+  background-color: #962715;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 20px 0;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
