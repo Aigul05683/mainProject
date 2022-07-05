@@ -1,0 +1,40 @@
+.reviews{
+   margin-top: 140px;
+    background: url('http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg');
+    &__title{
+        text-align: center;
+        color: #FFF;
+        font-size: 58px;
+        font-weight: 600;
+        line-height: 1.7em;
+        letter-spacing: 0;
+        
+        padding-top: 50px;
+    }
+    &__text{
+        font-weight: 600;
+        color: #fff;
+        font-size:30px ;
+        text-align: center;
+       
+    }
+    & .reviews-slide {
+        max-width: 380px;
+        max-height: 540px;
+        margin: 0px auto;
+        transition-duration: 300ms;
+        overflow: hidden;
+        margin-bottom: 50px;
+        &__img {
+            object-fit: cover;
+            margin-bottom: 13px;
+            overflow: hidden;
+            max-height: 540px;
+           
+            min-height: 540px;
+            max-height: 540px;
+            
+            
+        }
+    }
+}

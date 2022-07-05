@@ -11,7 +11,7 @@ $message = htmlspecialchars($_POST['message']);
 $tel = htmlspecialchars($_POST["tel"]);
 $error = '';
 
-if(!$name)
+if(!$name) 
 {
 $error .= 'Пожалуйста введите ваше имя<br />';
 }

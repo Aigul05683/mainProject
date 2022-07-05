@@ -4,16 +4,16 @@ $(document).ready(function() {
 
   jQuery(document).ready(function($) {
 
-    $(".ajax-contact-form").submit(function() {
+    $(".form").submit(function() {
     var str = $(this).serialize();
     
     $.ajax({
     type: "POST",
-    url: "../php/contact.php",
+    url: "../../../php/contact.php",
     data: str,
     success: function(msg) {
     if(msg == 'OK') {
-    result = '<p>Ваш заказ принят</p>';
+    result = '<p>Сообщение принято, мы свяжемся с вами в ближайшее время</p>';
     $(".fields").hide();
     } else {
     result = msg;
