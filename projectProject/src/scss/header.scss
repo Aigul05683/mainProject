@@ -6,12 +6,12 @@
     height: 100px;
     position: fixed;
     width: 100%;
-    background: url('/mainProject/src/img/bgMainDark.webp');
+    background: url('../../../src/img/bgMainDark.webp');
     z-index: 3;
     
 }
 .header {
-    background: url('/mainProject/src/img/bgMainDark.webp');
+    background: url('../../../src/img/bgMainDark.webp');
     
     &_dark{
         

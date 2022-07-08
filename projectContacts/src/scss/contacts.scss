@@ -1,5 +1,4 @@
 .contacts{
-    
     &__text{
         font-size: 80px;
         font-weight: 600;
@@ -7,7 +6,6 @@
         text-align: center;
         padding-bottom: 20px;
     }
-
     &__info{
         display: flex;
         flex-wrap: wrap;
@@ -17,17 +15,12 @@
         }
         &_contacts{
             color: #FFF;
-            font-family: Roboto,Sans-serif;
             font-size: 14px;
             font-weight: 900;
             line-height: 3.5;
-            
-
         }
     }
-    
 }
-
 .section-form{
     padding-top: 122px;
     padding-bottom: 100px;
@@ -40,8 +33,8 @@
     max-width: 450px;
     margin: 0 auto;
     text-align: center;
-    
     &__input, &__textarea{
+        resize: none;
         border: none;
         border-bottom: 1px solid #e1e1e1;
         font-size: 14px;
@@ -62,4 +55,11 @@
     text-decoration: none;
     padding: 20px 0;
     border: none;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:#b43e2b ;
+    transition: all .4s ease;
 }
