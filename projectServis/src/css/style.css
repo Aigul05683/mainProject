@@ -293,9 +293,10 @@ ul li:hover ul li {
 }
 
 .grid-item {
-  overflow: hidden;
-  padding: 15px;
-  width: 33.33%;
+  margin: 15px 0;
+  padding: 0 15px;
+  width: 33%;
+  height: 405px;
 }
 
 .grid-item__inner {
@@ -341,6 +342,11 @@ ul li:hover ul li {
   font-size: 24px;
   color: rgb(255, 255, 255);
   z-index: 2;
+  opacity: 0;
+}
+
+.grid-item__inner:hover .grid-item__tittle {
+  opacity: 1;
 }
 
 .grid-item__inner:hover .grid-item__img {

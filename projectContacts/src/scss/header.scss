@@ -5,27 +5,20 @@
     height: 100px;
     position: fixed;
     width: 100%;
-    background: url('/mainProject/src/img/bgMainDark.webp');
-    z-index: 2;
-    
+    background: url('../../../src/img/bgMainDark.webp');
+    z-index: 2;   
 }
 .header {
-    background: url('/mainProject/src/img/bgMainDark.webp');
-    
+    background: url('../../../src/img/bgMainDark.webp');
     &_dark{
-        
         padding-bottom: 110px;
-        
     }
     #navigation{
         position: fixed;
         z-index: 2;
         width: 1350px;
-        
-        
     }
     &__contacts{
-        
         text-align: end;
         font-family: "Open Sans",sans-serif;
         font-weight: 500;
@@ -36,7 +29,6 @@
             text-decoration: none;
             color: #ffffff;
         }
-        
     }
     &__info {
         padding-top: 60px;
@@ -74,15 +66,11 @@
            text-align: center;
             margin: 0 auto;
             transition: all 0.5s ease;
-           
         }
-
         &-btn:hover {
             color: #962715;
             background-color: white;
-            transition: all 0.5s ease;
-            
-            
+            transition: all 0.5s ease;   
         }
     }
     &-nav {
@@ -121,22 +109,16 @@
                 font-weight: 500;
                 font-size: 13px;
                 line-height: 20px;
-                
                 color: #ffffff;
                 text-decoration: none;
-                
                 margin-left: 20px;
-
             }
             &-item:hover {
                 text-decoration-line: underline;
-                
-
             }
         }
     }
 }
- 
 ul{
     list-style: none;
     position: relative;

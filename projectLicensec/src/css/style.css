@@ -24,12 +24,12 @@ body {
   height: 100px;
   position: fixed;
   width: 100%;
-  background: url("/mainProject/src/img/bgMainDark.webp");
+  background: url("../../../src/img/bgMainDark.webp");
   z-index: 3;
 }
 
 .header {
-  background: url("/mainProject/src/img/bgMainDark.webp");
+  background: url("../../../src/img/bgMainDark.webp");
 }
 .header_dark {
   padding-bottom: 110px;
@@ -225,6 +225,7 @@ ul li:hover ul li {
 .grid-item {
   overflow: hidden;
   height: 100%;
+  width: 100%;
   -webkit-box-shadow: 0px 24px 24px rgba(36, 80, 103, 0.4509803922);
           box-shadow: 0px 24px 24px rgba(36, 80, 103, 0.4509803922);
 }
