@@ -6,6 +6,7 @@ if($post)
 {
 $email = trim($_POST['email']);
 $name = htmlspecialchars($_POST['name']);
+$namecompany = htmlspecialchars($_POST['namecompany']);
 $email = htmlspecialchars($_POST['email']);
 $message = htmlspecialchars($_POST['message']);
 $tel = htmlspecialchars($_POST["tel"]);
@@ -14,6 +15,10 @@ $error = '';
 if(!$name) 
 {
 $error .= 'Пожалуйста введите ваше имя<br />';
+}
+if(!$namecompany) 
+{
+$error .= 'Пожалуйста введите название компании<br />';
 }
 
 // Проверка телефона
@@ -40,7 +45,7 @@ if(!$error)
 // (length)
 if(!$message || strlen($message) < 1)
 {
-$error .= "Введите ваше сообщение<br />";
+$error .= "Введите ваш вопрос <br />";
 }
 if(!$error)
 {
@@ -48,7 +53,7 @@ if(!$error)
 
 $name_tema = "=?utf-8?b?". base64_encode($name) ."?=";
 
-$subject ="Новая заявка с сайта domain.name";
+$subject ="Новая заявка с сайта www.ps.kz";
 $subject1 = "=?utf-8?b?". base64_encode($subject) ."?=";
 /*
 $message ="\n\nСообщение: ".$message."\n\nИмя: " .$name."\n\nТелефон: ".$tel."\n\n";
