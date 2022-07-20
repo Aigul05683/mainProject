@@ -6,9 +6,9 @@
     padding-bottom: 30px;
     color: #1e1e20;
     font-family: "Roboto Condensed", Sans-serif;
-    font-size: 58px;
+    font-size: 40px;
     font-weight: 600;
-    line-height: 1.7em;
+    line-height: 1.1em;
   }
    
 }
@@ -76,16 +76,18 @@
   position: absolute;
   left: 10px;
   bottom: 50px;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
-  z-index: 2;
+  z-index: 1;
 }
 
 .grid-item__tittle > span{
   display: block;
   transform: translateY(30px) ;
   transition: transform .4s ease;
+  opacity: 0;
 }
 .grid-item__inner:hover .grid-item__tittle > span{
   transform: translateY(-5px);
+  opacity: 1;
 }

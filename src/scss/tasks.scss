@@ -26,7 +26,7 @@
 
 .slide-track{
   display: flex;
-  width: calc(150px *13);
+  width: calc(150px *35);
   animation: scroll 15s linear infinite;
 }
 .slide-track:hover{
@@ -44,6 +44,6 @@
     transform: translateX(0);
   }
   100%{
-    transform: translateX(calc(-130px*18));
+    transform: translateX(calc(-130px*35));
   }
 }

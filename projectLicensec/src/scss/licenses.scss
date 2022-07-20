@@ -1,65 +1,57 @@
 .licenses {
   width: 100%;
-    margin-top: 10px;
+  margin-top: 10px;
 
-    &__title{
-        text-align: center;
-        padding-bottom: 8px;
-        color: #000;
-        font-family: "Roboto Condensed",Sans-serif;
-        font-size: 60px;
-        font-weight: 600;
-        line-height: 2.5em;
-        letter-spacing: 2.2px;
+  &__title {
+    text-align: center;
+    padding-bottom: 8px;
+    color: #000;
+    font-family: "Roboto Condensed", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.7em;
+  }
+
+  &__img {
+    display: flex;
+    width: 100%;
+    &_left {
+      width: 100%;
+
+      &-img {
+        width: 100%;
+        padding: 15px;
+      }
     }
-    
-    &__img{
+    &_right {
       display: flex;
       width: 100%;
-      &_left{
-        
+      &-up {
         width: 100%;
-        
-        &-img{
+
+        &_img {
           width: 100%;
           padding: 15px;
-          
         }
       }
-      &_right{
-      
-        display: flex;
+      &-down {
         width: 100%;
-        &-up{
+        &_img {
           width: 100%;
-          
-          &_img{
-            width: 100%;
-            padding: 15px;
-          }
-        }
-        &-down{
-         
-          width: 100%;
-          &_img {
-            width: 100%;
-          }
         }
       }
     }
+  }
 }
 
 .reviews-slide {
   transition-duration: 300ms;
   overflow: hidden;
   margin-bottom: 50px;
- 
+
   &__img {
-      object-fit: cover;
-      margin-bottom: 13px;
-      overflow: hidden;
-     
-      
+    object-fit: cover;
+    margin-bottom: 13px;
+    overflow: hidden;
   }
 }
-

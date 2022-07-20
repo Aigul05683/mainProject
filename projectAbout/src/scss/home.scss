@@ -3,18 +3,31 @@
   &__text{
       text-align: center;
       color: #1E1E20;
-      padding-bottom: 30px;
+      padding-bottom: 10px;
       color: #1E1E20;
       font-family: "Roboto Condensed",Sans-serif;
       font-size: 40px;
       font-weight: 600;
       line-height: 1.1em;
+      
   
   }
+  &__text1{
+    text-align: center;
+    color: #1E1E20;
+    padding-bottom: 10px;
+    color: #1E1E20;
+    font-family: "Roboto Condensed",Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    
+
+}
  &__cont{
   &_text{
     font-size: 20px;
     line-height: 1.5em;
+    text-align: justify;
   }
  }
 }

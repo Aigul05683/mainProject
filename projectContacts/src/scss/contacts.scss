@@ -1,6 +1,6 @@
 .contacts{
     &__text{
-        font-size: 80px;
+        font-size: 30px;
         font-weight: 600;
         color: #FFF;
         text-align: center;
@@ -22,11 +22,14 @@
     }
 }
 .section-form{
+    margin-top: 20px;
     padding-top: 20px;
     color: rgb(18, 16, 16);
     text-align: center;
+    // background: url("../../../src/img/bgMainDark.jpg");
 }
 .form{
+    
     display: flex;
     flex-direction: column;
     max-width: 450px;
@@ -61,4 +64,87 @@
     cursor: pointer;
     background-color:#b43e2b ;
     transition: all .4s ease;
+}
+
+
+.advantage{
+    
+    padding-bottom: 170px;
+    &__title {
+        text-align: center;
+        color: #32373b;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 1.7em;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+
+        &_item {
+            padding-top: 35px;
+            padding-bottom: 100px;
+            border: 3px solid #9aa2a9;
+            width: 140px;
+            height: 50px;
+            border-radius: 50%;
+            color: #9aa2a9;
+            font-size: 50px;
+            text-align: center;
+            position: relative;
+            transition: all .4s ease;
+            &__text {
+                font-weight: 600;
+                color: fff;
+                font-size: 20px;
+                margin-top: 52px;
+                font-family: "Open Sans";
+                width: 350px;
+                position: absolute;
+                left: -110px;
+            }
+        }
+        &_item:hover{
+            color: #263b4d;
+            border: 3px solid #263b4d;
+            transition: all .4s ease;
+            
+        }
+       &_item1{
+        padding-top: 45px;
+        padding-bottom: 50px;
+        border: 3px solid #9aa2a9;
+        width: 100px;
+        height: 30px;
+        border-radius: 50%;
+        color: #9aa2a9;
+        font-size: 10px;
+        text-align: center;
+        position: absolute;
+        top: 17px;
+        left: 17px;
+        opacity: 0;
+        transition: all .4s ease;
+       }
+
+       &_item:hover &_item1{
+        padding-top: 45px;
+        padding-bottom: 50px;
+        border: 3px solid #284d6e;
+        width: 100px;
+        height: 30px;
+        transition: all .4s ease;
+        opacity: 1;
+       }
+    }
+}
+
+strong{
+    color: #333333;
+}
+.overlay{
+    margin-top: 30px;
 }
