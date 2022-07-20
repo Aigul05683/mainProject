@@ -3,15 +3,15 @@
     position: relative;
 }
 .cont{
-    height: 100px;
+    height: 120px;
     position: fixed;
     width: 100%;
-    background: url('/mainProject/src/img/bgMainDark.webp');
+    background: url('../../src/img/bgMainDark.jpg'); 
     z-index: 2;
     
 }
 .header {
-    background: url('/mainProject/src/img/bgMainDark.webp');
+    background: url('../../src/img/bgMainDark.jpg');
     
     &_dark{
         
@@ -89,18 +89,21 @@
     &-nav {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding-top: 0px ;
-        
+        align-items: center;  
         text-transform: uppercase;
+        
+        
         &__img{
-            width: 44px;
-            height: 43px;
+            position: absolute;
+            height: 100px;
+            top: -40px;
+
         }
         &__logo{
             text-decoration: none;
             color: #ffffff;
             position: relative;
+            
         }
         &__text{
             text-decoration: none;
@@ -117,6 +120,7 @@
             letter-spacing: 1px;
             font-family: "Open Sans",sans-serif;
             flex-wrap: wrap;
+            padding-top: 20px;
             &-item {
                 font-family: "Open Sans",sans-serif;
                 font-weight: 500;
@@ -159,7 +163,7 @@ ul li a{
     text-align: left;
 }
 ul li ul{
-    background-color: #961515a8;
+    background-color: #961515;
     margin-left: 20px;
     position: absolute;
     width: 400px;
@@ -186,6 +190,6 @@ ul li:hover ul li{
     
 }
 
-#down{
+.down{
     padding-bottom: 2px;
 }

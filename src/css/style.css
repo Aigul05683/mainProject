@@ -21,7 +21,7 @@ body {
 }
 
 .cont {
-  height: 100px;
+  height: 120px;
   position: fixed;
   width: 100%;
   background: url("../../src/img/bgMainDark.jpg");
@@ -106,12 +106,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 0px;
   text-transform: uppercase;
 }
 .header-nav__img {
-  width: 44px;
-  height: 43px;
+  position: absolute;
+  height: 100px;
+  top: -40px;
 }
 .header-nav__logo {
   text-decoration: none;
@@ -138,6 +138,7 @@ body {
   font-family: "Open Sans", sans-serif;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 20px;
 }
 .header-nav__menu-item {
   font-family: "Open Sans", sans-serif;
@@ -178,7 +179,7 @@ ul li a {
 }
 
 ul li ul {
-  background-color: rgba(150, 21, 21, 0.6588235294);
+  background-color: #961515;
   margin-left: 20px;
   position: absolute;
   width: 400px;
@@ -282,83 +283,6 @@ ul li:hover ul li {
   color: #1E1E20;
 }
 
-.gallery-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.grid-item {
-  margin: 15px 0;
-  padding: 0 15px;
-  width: 33%;
-  height: 405px;
-}
-
-.grid-item__inner {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.grid-item__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.grid-item__inner:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 0%;
-  background: rgba(35, 58, 77, 0.7333333333);
-  content: "";
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.grid-item__inner:hover:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(35, 58, 77, 0.7333333333);
-  content: "";
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.grid-item__tittle {
-  position: absolute;
-  width: 100%;
-  top: 140px;
-  color: #fff;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.grid-item__inner:hover .grid-item__tittle {
-  opacity: 1;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
 .grid-item__hidden {
   height: 0;
   visibility: hidden;
@@ -403,6 +327,95 @@ ul li:hover ul li {
           transform: rotate(180deg);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.gallery-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-item {
+  margin: 15px 0;
+  padding: 0 15px;
+  width: 33%;
+  height: 405px;
+}
+
+.grid-item__inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid-item__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.grid-item__inner:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(6, 50, 195, 0.437);
+  z-index: 1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.grid-item__inner:hover:before {
+  opacity: 1;
+}
+
+.grid-item__tittle {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  opacity: 0;
+}
+
+.grid-item__inner:hover .grid-item__tittle {
+  opacity: 1;
+}
+
+.grid-item__inner:hover .grid-item__img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-item__tittle {
+  display: block;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.grid-item__inner:hover .grid-item__tittle {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .map__cont_main {
@@ -978,7 +991,7 @@ ul li:hover ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1950px;
+  width: 5250px;
   -webkit-animation: scroll 15s linear infinite;
           animation: scroll 15s linear infinite;
 }
@@ -1006,8 +1019,8 @@ ul li:hover ul li {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-2340px);
-            transform: translateX(-2340px);
+    -webkit-transform: translateX(-4550px);
+            transform: translateX(-4550px);
   }
 }
 .consultation {
@@ -1063,18 +1076,17 @@ ul li:hover ul li {
 }
 
 .advantage {
-  margin-top: 65px;
-  background: url("http://arbitrium.org.ru/wp-content/uploads/2021/08/city-5716456-scaled.jpg");
-  padding-bottom: 200px;
+  background: url("../img/bgMain.jpg");
+  padding-bottom: 140px;
 }
 .advantage__title {
   text-align: center;
   color: #ffffff;
   font-size: 58px;
   font-weight: 600;
-  line-height: 1.7em;
-  padding-bottom: 40px;
-  padding-top: 50px;
+  line-height: 1em;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 .advantage__icons {
   display: -webkit-box;
@@ -1085,32 +1097,25 @@ ul li:hover ul li {
           justify-content: space-between;
 }
 .advantage__icons_item {
-  margin-top: 20px;
   padding-top: 35px;
   padding-bottom: 100px;
   border: 3px solid rgb(255, 255, 255);
-  width: 166px;
-  height: 166px;
+  width: 140px;
+  height: 50px;
   border-radius: 50%;
   color: #fff;
-  font-size: 80px;
+  font-size: 50px;
   text-align: center;
+  position: relative;
 }
 .advantage__icons_item__text {
   font-weight: 600;
   color: fff;
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 52px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-family: "Open Sans";
+  width: 350px;
+  position: absolute;
+  left: -110px;
 }
 /*# sourceMappingURL=style.css.map */

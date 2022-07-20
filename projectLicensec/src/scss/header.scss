@@ -1,18 +1,17 @@
-
 .cont1{
   background-color: rgba(0, 0, 0, 0.475);
   position: relative;
 }
 .cont{
-  height: 100px;
+  height: 120px;
   position: fixed;
   width: 100%;
-  background: url('../../../src/img/bgMainDark.webp');
-  z-index: 3;
+  background: url('../../../src/img/bgMainDark.jpg'); 
+  z-index: 2;
   
 }
 .header {
-  background: url('../../../src/img/bgMainDark.webp');
+  background: url('../../../src/img/bgMainDark.jpg');
   
   &_dark{
       
@@ -21,7 +20,7 @@
   }
   #navigation{
       position: fixed;
-      z-index: 4;
+      z-index: 2;
       width: 1350px;
       
       
@@ -90,18 +89,21 @@
   &-nav {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding-top: 0px ;
-      
+      align-items: center;  
       text-transform: uppercase;
+      
+      
       &__img{
-          width: 44px;
-          height: 43px;
+          position: absolute;
+          height: 100px;
+          top: -40px;
+
       }
       &__logo{
           text-decoration: none;
           color: #ffffff;
           position: relative;
+          
       }
       &__text{
           text-decoration: none;
@@ -118,6 +120,7 @@
           letter-spacing: 1px;
           font-family: "Open Sans",sans-serif;
           flex-wrap: wrap;
+          padding-top: 20px;
           &-item {
               font-family: "Open Sans",sans-serif;
               font-weight: 500;
@@ -160,7 +163,7 @@ ul li a{
   text-align: left;
 }
 ul li ul{
-  background-color: #961515a8;
+  background-color: #961515;
   margin-left: 20px;
   position: absolute;
   width: 400px;
@@ -187,7 +190,7 @@ ul li:hover ul li{
   
 }
 
-#down{
+.down{
   padding-bottom: 2px;
 }
 
@@ -233,13 +236,13 @@ ul li:hover ul li{
     top: 0;
     width: 100%;
     height: 100%;
-    background: #295f7c83;
-    opacity: 0;
-    z-index: 2;
+    background: #295f7ca6;
+    opacity: 1;
+  
     transition: all .4s ease;
   }
   .grid-item__inner:hover:before{
-    opacity: 1;
+    opacity: 0;
      
   }
   
@@ -260,14 +263,16 @@ ul li:hover ul li{
     bottom: 50px;
     font-size: 24px;
     color: white;
-    z-index: 3;
+    
   }
   
   .grid-item__tittle > span{
     display: block;
     transform: translateY(30px) ;
     transition: transform .4s ease;
+    opacity: 1;
   }
   .grid-item__inner:hover .grid-item__tittle > span{
     transform: translateY(-5px);
+    opacity: 0;
   }
