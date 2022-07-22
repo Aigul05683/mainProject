@@ -39,6 +39,21 @@
         }
         
     }
+    &__contacts2{
+        
+        text-align: end;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        color: #ffffff;
+        padding-top: 15px;
+        display: none;
+        &_item{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+    }
     &__info {
         padding-top: 60px;
         text-align: center;
@@ -92,7 +107,12 @@
         align-items: center;  
         text-transform: uppercase;
         
-        
+        & .burger{
+            display: none;
+            position: absolute;
+            right: 25px;
+            top: 10px;
+        }
         &__img{
             position: absolute;
             height: 100px;
@@ -121,6 +141,7 @@
             font-family: "Open Sans",sans-serif;
             flex-wrap: wrap;
             padding-top: 20px;
+            transition: all .4s ease;
             &-item {
                 font-family: "Open Sans",sans-serif;
                 font-weight: 500;
