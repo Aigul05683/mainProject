@@ -13,6 +13,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  zoom: 75%;
 }
 
 .cont1 {
@@ -224,7 +225,7 @@ ul li:hover ul li {
   padding-bottom: 30px;
   color: #1E1E20;
   font-family: "Roboto Condensed", Sans-serif;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 600;
   line-height: 1.1em;
 }

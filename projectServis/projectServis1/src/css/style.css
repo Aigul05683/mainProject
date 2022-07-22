@@ -13,6 +13,7 @@
 
 body {
   font-family: "Roboto Condensed";
+  zoom: 75%;
 }
 
 .cont1 {
@@ -222,11 +223,10 @@ ul li:hover ul li {
   text-align: center;
   color: #1E1E20;
   padding-bottom: 30px;
-  color: #1E1E20;
   font-family: "Roboto Condensed", Sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 1.1em;
+  line-height: 1.7em;
 }
 .home__cont_img {
   width: 34%;
@@ -234,7 +234,10 @@ ul li:hover ul li {
   padding: 15px;
 }
 .home__cont_text {
-  line-height: 1.3em;
+  line-height: 1.7em;
+  font-size: 19px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   text-align: justify;
 }
 
