@@ -13,6 +13,7 @@
 
 body {
   font-family: "Roboto Condensed";
+  zoom: 75%;
 }
 
 .cont1 {
@@ -249,13 +250,12 @@ ul li:hover ul li {
 }
 .home__text {
   text-align: center;
-  color: #1E1E20;
-  padding-bottom: 30px;
-  color: #1E1E20;
-  font-family: "Roboto Condensed", Sans-serif;
-  font-size: 58px;
+  color: #32373b;
+  font-size: 48px;
   font-weight: 600;
   line-height: 1.7em;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 .home .imgs {
   display: -webkit-box;
@@ -325,11 +325,12 @@ ul li:hover ul li {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(6, 50, 195, 0.437);
-  z-index: 2;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(36, 79, 103, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(36, 79, 103, 0.5));
+  z-index: 1;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  opacity: 0;
+  opacity: 1;
 }
 
 .grid-item__inner:hover:before {
@@ -342,8 +343,8 @@ ul li:hover ul li {
   bottom: 50px;
   font-size: 24px;
   color: rgb(255, 255, 255);
-  z-index: 2;
-  opacity: 0;
+  z-index: 1;
+  opacity: 1;
 }
 
 .grid-item__inner:hover .grid-item__tittle {
@@ -379,6 +380,7 @@ ul li:hover ul li {
 .footer {
   position: relative;
   padding-top: 10px;
+  margin-top: 40px;
   background: #244f67;
 }
 .footer__copyright {

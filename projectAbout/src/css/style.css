@@ -13,6 +13,7 @@
 
 body {
   font-family: "Roboto Condensed";
+  zoom: 75%;
 }
 
 .cont1 {
@@ -224,7 +225,7 @@ ul li:hover ul li {
   padding-bottom: 10px;
   color: #1E1E20;
   font-family: "Roboto Condensed", Sans-serif;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 600;
   line-height: 1.1em;
 }
@@ -465,22 +466,12 @@ span {
 .reviews__title {
   text-align: center;
   color: #FFF;
-  font-size: 58px;
+  padding-bottom: 10px;
+  font-family: "Roboto Condensed", Sans-serif;
+  font-size: 48px;
   font-weight: 600;
-  line-height: 1.7em;
-  letter-spacing: 0;
-  padding-top: 50px;
-}
-
-.slider {
-  margin: auto;
-  position: relative;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  padding-bottom: 20px;
+  line-height: 1.1em;
+  padding-top: 20px;
 }
 
 .slide-track {
@@ -538,7 +529,6 @@ span {
   display: grid;
   place-items: center;
   overflow: hidden;
-  padding-bottom: 20px;
 }
 
 .slide:hover {
@@ -550,7 +540,6 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-animation: scroll 0s linear infinite;
           animation: scroll 0s linear infinite;
   margin: 0 auto;
