@@ -455,4 +455,14 @@ span {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+
+#service-content {
+  background-image: linear-gradient( to bottom, rgb(9 39 57 / 87%), rgb(9 39 57 / 87%) ), url("../img/32.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#FFF !important;
+}
+#service-content_title {
+  color:#FFF !important;
+}
 /*# sourceMappingURL=style.css.map */
