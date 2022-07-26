@@ -32,7 +32,7 @@ body {
 .header {
   /* background: url("../../src/img/bgMainDark.jpg"); */
   background-color: rgb(0 19 34 / 63%);
-  height: 1200px;
+  height: 950px;
 }
 .header_dark {
   padding-bottom: 170px;
@@ -68,7 +68,7 @@ body {
   color: #ffffff;
 }
 .header__info {
-  padding-top: 360px;
+  padding-top: 280px;
   text-align: center;
 }
 .header__info-title {
@@ -1960,14 +1960,6 @@ ul li:hover ul li {
   margin: 0 auto;
   min-width: 110%;
   z-index: -2;
-}
-#blackscreenVideo{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
 }
 .main {
   background-color: white;
