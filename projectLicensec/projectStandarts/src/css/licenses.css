@@ -1,0 +1,22 @@
+.licenses {
+  padding-top: 20px;
+}
+.licenses__img {
+  width: 550px;
+  height: 309px;
+}
+.licenses__img_text {
+  font-weight: 600;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  text-align: center;
+}
+.licenses__text {
+  text-align: center;
+  color: #1E1E20;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.7em;
+  letter-spacing: 0;
+  padding-bottom: 30px;
+}
