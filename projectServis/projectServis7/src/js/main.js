@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
     
     $.ajax({
     type: "POST",
-    url: "../../php/contact.php",
+    url: "../../../../php/contact.php",
     data: str,
     success: function(msg) {
     if(msg == 'OK') {

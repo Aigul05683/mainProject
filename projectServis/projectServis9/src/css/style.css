@@ -44,7 +44,7 @@ body {
   text-align: end;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 16px;
   color: #ffffff;
   padding-top: 15px;
 }
@@ -144,7 +144,7 @@ body {
 .header-nav__menu-item {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
@@ -168,7 +168,7 @@ ul {
 
 ul li {
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   color: #ffffff;
 }
 
@@ -454,13 +454,4 @@ span {
   background: #fff;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-#service-content {
-  background-image: linear-gradient( to bottom, rgb(9 39 57 / 87%), rgb(9 39 57 / 87%) ), url("../img/6.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color:#FFF !important;
-}
-#service-content_title {
-  color:#FFF !important;
 }
