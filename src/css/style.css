@@ -1962,7 +1962,10 @@ ul li:hover ul li {
   z-index: -2;
 }
 .main {
-  background-color: white;
+  background-color: rgb(9 39 57);
+}
+.home__text, .tasks__title {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
