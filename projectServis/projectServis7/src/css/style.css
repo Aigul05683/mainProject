@@ -456,7 +456,7 @@ span {
           transform: rotate(-45deg);
 }
 #service-content {
-  background-image: linear-gradient( to bottom, rgb(9 39 57 / 87%), rgb(9 39 57 / 87%) ), url("../img/7.jpg");
+  background-image: linear-gradient( to bottom, rgb(9 39 57 / 87%), rgb(9 39 57 / 87%) ), url("../img/7.png");
   background-repeat: no-repeat;
   background-size: cover;
   color:#FFF !important;
