@@ -234,7 +234,7 @@ ul li:hover ul li {
 }
 .home__text {
   text-align: center;
-  color: #1E1E20;
+  color: #ddd;
   padding-bottom: 30px;
   font-family: "Roboto Condensed", Sans-serif;
   font-size: 30px;
