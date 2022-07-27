@@ -190,6 +190,7 @@ cursor: pointer;
   height: 100%; 
   overflow: hidden;
   
+  
 }
 .grid-item__img{
   width: 100%;
@@ -219,7 +220,11 @@ cursor: pointer;
 .grid-item__tittle{
   position: absolute;
   left: 10px;
-  top: 59%;
+  top: 30%;
+  text-align: center;
+  display: block;
+  align-items: center;
+  margin: 0px 50px;
   font-size: 24px;
   color: rgb(255, 255, 255);
   z-index: 1;

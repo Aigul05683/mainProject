@@ -25,14 +25,12 @@ body {
   height: 120px;
   position: fixed;
   width: 100%;
-  background-color: rgb(0 19 34 / 63%);
+  background: url("../../src/img/bgMainDark.jpg");
   z-index: 2;
 }
 
 .header {
-  /* background: url("../../src/img/bgMainDark.jpg"); */
-  background-color: rgb(0 19 34 / 63%);
-  height: 950px;
+  background: url("../../src/img/bgMainDark.jpg");
 }
 .header_dark {
   padding-bottom: 170px;
@@ -68,7 +66,7 @@ body {
   color: #ffffff;
 }
 .header__info {
-  padding-top: 280px;
+  padding-top: 60px;
   text-align: center;
 }
 .header__info-title {
@@ -409,7 +407,13 @@ ul li:hover ul li {
 .grid-item__tittle {
   position: absolute;
   left: 10px;
-  top: 59%;
+  top: 30%;
+  text-align: center;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 50px;
   font-size: 24px;
   color: rgb(255, 255, 255);
   z-index: 1;
@@ -1953,19 +1957,4 @@ ul li:hover ul li {
     width: 407px;
   }
 }
-#videoBackground {
-  position: fixed;
-  right: -5%;
-  bottom: 0;
-  margin: 0 auto;
-  min-width: 110%;
-  z-index: -2;
-}
-.main {
-  background-color: rgb(9 39 57);
-}
-.home__text, .tasks__title {
-  color: white;
-}
-
 /*# sourceMappingURL=style.css.map */
