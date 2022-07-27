@@ -16,6 +16,10 @@ body {
   zoom: 75%;
 }
 
+.main {
+  background-color: white;
+}
+
 .cont1 {
   background-color: rgba(0, 0, 0, 0.475);
   position: relative;
