@@ -1967,14 +1967,6 @@ ul li:hover ul li {
   min-width: 110%;
   z-index: -2;
 }
-#blackscreenVideo{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-}
 .main {
   background-color: white;
 }
