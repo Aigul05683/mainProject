@@ -37,11 +37,7 @@ $(document).ready(function () {
             .closest('div.menu-tabs').find('div.menu-tabs__content').removeClass('menu-tabs__content_active').eq($(this).index()).addClass('menu-tabs__content_active');
     });
 
-    // $('.faq__moreBtn').on('click', function(e) {
-    //     e.preventDefault()
-    //     $('#faq-hidden').toggleClass('faq__text_hidden')
 
-    // })
     $('.burger').on('click', function(){
         $('.burger').toggleClass('burger_active')
         $('.header-nav').toggleClass('header-nav_active')
