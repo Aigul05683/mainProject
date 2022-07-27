@@ -18,6 +18,14 @@ function backToTop() {
 
 backToTop();
 
+
+$('.burger').on('click', function(){
+    $('.burger').toggleClass('burger_active')
+    $('.header-nav').toggleClass('header-nav_active')
+    $('.header__contacts').toggleClass('.header__contacts_active')
+    
+})
+
 jQuery(document).ready(function ($) {
 
     $(".form").submit(function () {
