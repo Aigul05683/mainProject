@@ -122,6 +122,12 @@ body {
           align-items: center;
   text-transform: uppercase;
 }
+.header-nav .burger {
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
 .header-nav__img {
   position: absolute;
   height: 100px;
@@ -678,12 +684,34 @@ span {
 
   .home__text {
     text-align: center;
-    color: #1E1E20;
+    color: #c4c4cb;
     font-size: 27px;
     font-weight: 600;
-    line-height: 0.75em;
-    padding-bottom: 2px;
+    line-height: 1.3em;
+    padding-bottom: 25px;
     padding-top: 2px;
+  }
+
+  #down {
+    display: none;
+  }
+
+  .header-nav__menu-item {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 39px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 0px;
+  }
+
+  span {
+    margin-left: 0px;
+  }
+
+  ul li ul {
+    display: none;
   }
 
   .grid-item {

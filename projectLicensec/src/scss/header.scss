@@ -10,12 +10,13 @@
   z-index: 2;
   
 }
+
 .header {
   background: url('../../../src/img/bgMainDark.jpg');
-  
+ 
   &_dark{
       
-      padding-bottom: 110px;
+      padding-bottom: 170px;
       
   }
   #navigation{
@@ -25,21 +26,6 @@
       
       
   }
-  &__contacts2{
-        
-    text-align: end;
-    font-family: "Open Sans",sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    color: #ffffff;
-    padding-top: 15px;
-    display: none;
-    &_item{
-        text-decoration: none;
-        color: #ffffff;
-    }
-    
-}
   &__contacts{
       
       text-align: end;
@@ -48,6 +34,21 @@
       font-size: 16px;
       color: #ffffff;
       padding-top: 15px;
+      &_item{
+          text-decoration: none;
+          color: #ffffff;
+      }
+      
+  }
+  &__contacts2{
+      
+      text-align: end;
+      font-family: "Open Sans",sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      color: #ffffff;
+      padding-top: 15px;
+      display: none;
       &_item{
           text-decoration: none;
           color: #ffffff;
@@ -107,7 +108,12 @@
       align-items: center;  
       text-transform: uppercase;
       
-      
+      & .burger{
+          display: none;
+          position: absolute;
+          right: 25px;
+          top: 10px;
+      }
       &__img{
           position: absolute;
           height: 100px;
@@ -136,6 +142,7 @@
           font-family: "Open Sans",sans-serif;
           flex-wrap: wrap;
           padding-top: 20px;
+          transition: all .4s ease;
           &-item {
               font-family: "Open Sans",sans-serif;
               font-weight: 500;

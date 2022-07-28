@@ -1160,6 +1160,10 @@ ul li:hover ul li {
 }
 
 @media (max-width: 992px) {
+  ul li ul {
+    display: none;
+  }
+
   .header #navigation {
     position: fixed;
     z-index: 2;
@@ -1287,7 +1291,7 @@ ul li:hover ul li {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 14px;
-    line-height: 46px;
+    line-height: 39px;
     color: #ffffff;
     text-decoration: none;
     margin-left: 0px;
@@ -1373,12 +1377,21 @@ ul li:hover ul li {
 
   .grid-item__tittle {
     position: absolute;
-    left: 6px;
-    top: 22%;
+    left: -20px;
+    top: 7%;
     font-size: 18px;
     color: rgb(255, 255, 255);
     z-index: 1;
     opacity: 1;
+  }
+
+  .grid-item__img {
+    width: 130%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
   }
 
   .grid-item__inner:before {

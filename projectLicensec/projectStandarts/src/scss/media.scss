@@ -14,6 +14,12 @@
     
 }
 @media (max-width:992px ){
+    ul li ul {
+        display: none;
+    }
+    #down{
+        display: none;
+    }
     .header #navigation {
         position: fixed;
         z-index: 2;
