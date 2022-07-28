@@ -14,6 +14,12 @@
     
 }
 @media (max-width:992px ){
+    ul li ul {
+        display: none;
+    }
+    #down{
+        display: none;
+    }
     .header #navigation {
         position: fixed;
         z-index: 2;
@@ -128,7 +134,7 @@
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 14px;
-        line-height: 46px;
+        line-height: 39px;
         color: #ffffff;
         text-decoration: none;
         margin-left: 0px;
@@ -318,11 +324,26 @@
         animation: scroll 40s linear infinite;
     }
     .slide {
-        max-height: 107px;
+        height: 258px;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         padding: 11px;
+    }
+    
+    
+    .home__text1 {
+        text-align: center;
+        color: #1E1E20;
+        padding-bottom: 10px;
+        font-family: "Roboto Condensed", Sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        padding-top: 16px;
     }
     .tasks {
         padding-bottom: 3px;

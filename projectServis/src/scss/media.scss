@@ -14,6 +14,12 @@
     
 }
 @media (max-width:992px ){
+    ul li ul {
+        display: none;
+    }
+    #down{
+        display: none;
+    }
     .header #navigation {
         position: fixed;
         z-index: 2;
@@ -128,7 +134,7 @@
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 14px;
-        line-height: 46px;
+        line-height: 39px;
         color: #ffffff;
         text-decoration: none;
         margin-left: 0px;
@@ -205,12 +211,26 @@
     }
     .grid-item__tittle {
         position: absolute;
-        left: 6px;
-        top: 22%;
-        font-size: 18px;
+        left: 0px;
+        top: 3%;
+        text-align: center;
+        display: block;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0px 35px;
+        font-size: 19px;
         color: rgb(255, 255, 255);
         z-index: 1;
         opacity: 1;
+    }
+    .grid-item__img {
+        width: 129%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
     }
     .grid-item__inner:before {
         content: "";

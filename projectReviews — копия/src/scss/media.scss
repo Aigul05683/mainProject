@@ -14,10 +14,19 @@
     
 }
 @media (max-width:992px ){
+    ul li ul {
+        display: none;
+    }
+    #down{
+        display: none;
+    }
     .header #navigation {
         position: fixed;
         z-index: 2;
         width: 500px;
+    }
+    .home {
+        padding: 20px;
     }
     .header{
        & .burger{
@@ -193,9 +202,9 @@
         color: #1E1E20;
         font-size: 27px;
         font-weight: 600;
-        line-height: .75em;
-        padding-bottom: 2px;
-        padding-top: 2px;
+        line-height: 0.75em;
+        padding-bottom: 24px;
+        padding-top: 0px;
     }
     .grid-item {
         margin: 6px 0;
@@ -304,9 +313,9 @@
     .tasks__title {
         text-align: center;
         color: #32373b;
-        font-size: 27px;
+        font-size: 19px;
         font-weight: 600;
-        line-height: .75em;
+        line-height: 0.75em;
         padding-bottom: 1px;
     }
     .slide-track {

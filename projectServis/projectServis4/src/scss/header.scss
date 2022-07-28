@@ -107,6 +107,12 @@
         align-items: center;  
         text-transform: uppercase;
         
+        & .burger{
+            display: none;
+            position: absolute;
+            right: 25px;
+            top: 10px;
+        }
         
         &__img{
             position: absolute;

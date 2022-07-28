@@ -14,6 +14,12 @@
     
 }
 @media (max-width:992px ){
+    ul li ul {
+        display: none;
+    }
+    #down{
+        display: none;
+    }
     .header #navigation {
         position: fixed;
         z-index: 2;
@@ -128,7 +134,7 @@
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-size: 14px;
-        line-height: 46px;
+        line-height: 39px;
         color: #ffffff;
         text-decoration: none;
         margin-left: 0px;
@@ -197,20 +203,35 @@
         padding-bottom: 2px;
         padding-top: 2px;
     }
-    .grid-item {
-        margin: 6px 0;
-        padding: 0 6px;
-        width: 33%;
-        height: 208px;
+    .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
     }
-    .grid-item__tittle {
-        position: absolute;
-        left: 6px;
-        top: 22%;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        z-index: 1;
-        opacity: 1;
+    .grid-iteml {
+        overflow: hidden;
+        width: 46%;
+        -ms-grid-column-span: 2;
+        /* grid-column: span 2; */
+        -ms-grid-row-span: 2;
+        grid-row: span 2;
+        position: relative;
+        -webkit-box-shadow: 0px 24px 24px rgb(36 80 103 / 45%);
+        box-shadow: 0px 24px 24px rgb(36 80 103 / 45%);
+        height: 100%;
+    }
+    .grid-item {
+        overflow: hidden;
+        width: 46%;
+        -ms-grid-column-span: 2;
+        /* grid-column: span 2; */
+        -ms-grid-row-span: 2;
+        grid-row: span 2;
+        position: relative;
+        -webkit-box-shadow: 0px 24px 24px rgb(36 80 103 / 45%);
+        box-shadow: 0px 24px 24px rgb(36 80 103 / 45%);
+        height: 100%;
+        margin: 0px 0;
+        padding: 0 0px;
     }
     .grid-item__inner:before {
         content: "";
@@ -225,6 +246,14 @@
         -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
         opacity: 1;
+    }
+    .grid-item__tittle {
+        position: absolute;
+        left: 10px;
+        bottom: 50px;
+        font-size: 24px;
+        color: white;
+        z-index: 1;
     }
     .advantage__title {
         text-align: center;
