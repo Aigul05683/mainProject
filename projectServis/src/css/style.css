@@ -406,8 +406,7 @@ ul li:hover ul li {
 
 .footer {
   position: relative;
-  padding-top: 10px;
-  margin-top: 40px;
+  padding-top: 40px;
   background: #244f67;
 }
 .footer__copyright {
@@ -1678,3 +1677,4 @@ ul li:hover ul li {
     height: 300px;
   }
 }
+/*# sourceMappingURL=style.css.map */

@@ -16,6 +16,10 @@ body {
   zoom: 75%;
 }
 
+.main {
+  background-color: white;
+}
+
 .cont1 {
   background-color: rgba(0, 0, 0, 0.475);
   position: relative;
@@ -237,6 +241,24 @@ ul li:hover ul li {
 
 .down {
   padding-bottom: 2px;
+}
+
+#videoBackground {
+  position: fixed;
+  right: -5%;
+  bottom: 0;
+  margin: 0 auto;
+  min-width: 110%;
+  z-index: -2;
+}
+
+.main {
+  background-color: rgb(46, 65, 96);
+}
+
+.home__text,
+.tasks__title {
+  color: white;
 }
 
 .home {
@@ -1172,6 +1194,17 @@ ul li:hover ul li {
     width: 500px;
   }
 
+  .header__info {
+    padding-top: 196px;
+    text-align: center;
+  }
+
+  .header {
+    /* background: url(../../src/img/bgMainDark.jpg); */
+    background-color: rgba(0, 19, 34, 0.63);
+    height: 502px;
+  }
+
   .header .burger {
     display: block;
     width: 50px;
@@ -1579,8 +1612,23 @@ ul li:hover ul li {
   }
 }
 @media (max-width: 415px) {
+  .header {
+    /* background: url(../../src/img/bgMainDark.jpg); */
+    background-color: rgba(0, 19, 34, 0.63);
+    height: 356px;
+  }
+
   ul li ul {
     display: none;
+  }
+
+  #videoBackground {
+    position: fixed;
+    right: -74%;
+    bottom: 324px;
+    margin: 0 auto;
+    min-width: 110%;
+    z-index: -2;
   }
 
   .container, .container-sm {

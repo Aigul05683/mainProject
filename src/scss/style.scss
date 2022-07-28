@@ -14,6 +14,9 @@ body{
     font-family: 'Roboto Condensed';
     zoom: 75%;
 }
+.main {
+    background-color: white;
+  }
 @import './header.scss';
 @import './home.scss';
 @import './map.scss';
