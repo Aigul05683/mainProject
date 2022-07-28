@@ -1,0 +1,19 @@
+#videoBackground {
+    position: fixed;
+    right: -5%;
+    bottom: 0;
+    margin: 0 auto;
+    min-width: 110%;
+    z-index: -2;
+}
+
+.main {
+    background: #244f67;
+}
+
+.white-text {
+    color: white;
+}
+span {
+    margin-left: 44px;
+}
