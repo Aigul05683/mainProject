@@ -2,7 +2,7 @@
     padding: 40px;
     &__text{
       text-align: center;
-      color: #1E1E20;
+      color: #ddd;
       padding-bottom: 30px;
       font-family: "Roboto Condensed",Sans-serif;
       font-size: 30px;
@@ -32,4 +32,10 @@
 }
 span{
   margin-left: 25px;
+}
+#service-content {
+  background-image: linear-gradient( to bottom, rgb(9 39 57 / 87%), rgb(9 39 57 / 87%) ), url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFF !important;
 }
