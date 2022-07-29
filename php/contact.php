@@ -62,7 +62,7 @@ $message1 ="\n\nИмя: ".$name." " .$namecompany ="\n\nКомпания: " .$na
 
 
 $header = "Content-Type: text/plain; charset=utf-8\n";
-
+$header = "Access-Control-Allow-Origin: *"; // или
 $header .= "From: Новая заявка <gfp_office@mail.ru>\n\n";	
 $mail = mail("gfp_office@mail.ru", $subject1, iconv ('utf-8', 'windows-1251', $message1), iconv ('utf-8', 'windows-1251', $header));
 
