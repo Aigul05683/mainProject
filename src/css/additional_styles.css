@@ -30,3 +30,7 @@ span {
         z-index: -2;
     }
 }
+
+.grid-item__tittle {
+    text-shadow: 1px 1px 30px #000;
+}

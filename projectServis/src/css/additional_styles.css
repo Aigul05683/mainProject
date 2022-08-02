@@ -8,3 +8,6 @@
 span {
     margin-left: 44px;
 }
+.grid-item__tittle {
+    text-shadow: 1px 1px 30px #000;
+}
