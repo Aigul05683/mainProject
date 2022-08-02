@@ -65,3 +65,6 @@ jQuery(document).ready(function($) {
 
 - src/js/main.js
 
+## File with credentials - Requires access to pglobalfire@gmail.com
+[credentials.txt](https://drive.google.com/file/d/1G2V64Zf_p2KkXHO_FcztVSmQEF2yza0K/view)
+
