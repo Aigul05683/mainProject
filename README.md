@@ -11,7 +11,7 @@ Main Project Structure
 - PHP - local email sending agent
 
 
-## Email sending code
+## Email sending code - src/js/main.js
 
 ```javascript
 jQuery(document).ready(function($) {
