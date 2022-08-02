@@ -53,3 +53,16 @@ jQuery(document).ready(function($) {
 
 - src/js/main.js
 
+
+## 🔗 Structure
+- [projectAbout - О компании](https://github.com/Aigul05683/mainProject/tree/main/projectAbout)
+
+- [projectContacts - Контакты](https://github.com/Aigul05683/mainProject/tree/main/projectContacts)
+
+- [projectLicensec - Нормативные документы](https://github.com/Aigul05683/mainProject/tree/main/projectLicensec)
+
+- [projectProject - Реализованные проекты](https://github.com/Aigul05683/mainProject/tree/main/projectProject)
+
+- [projectReviews - Наука](https://github.com/Aigul05683/mainProject/tree/main/projectReviews)
+
+- [projectServis - Услуги](https://github.com/Aigul05683/mainProject/tree/main/projectServis)
