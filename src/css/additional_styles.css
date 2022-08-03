@@ -29,6 +29,9 @@ span {
         min-width: 110%;
         z-index: -2;
     }
+    .map__cont_main > object {
+        transform: scale(0.6);
+    }
 }
 
 .grid-item__tittle {
